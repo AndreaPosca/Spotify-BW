@@ -19,9 +19,9 @@ Ricreare l'app il più fedelmente possibile.
 ### Impostazione del lavoro
 
 Pagine da creare:
-* **Homepage
+* Homepage
 * Pagina artista
-* pagina album**
+* Pagina album
 
 
 ### API-Homepage

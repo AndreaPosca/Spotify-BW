@@ -1,3 +1,11 @@
+/* 
+    CSS Custom
+    album.html
+
+    BuildWeek n.3
+    Group n. 4
+*/
+
 /* Impostazioni globali */
 body {
   font-size: 12px;
@@ -12,6 +20,17 @@ body {
   background-color: #272727;
 }
 /* end impostazioni globali */
+
+
+/* Mobile */
+.sidebar-sinistra {
+  display: none;
+}
+
+.sidebar-destra {
+  display: none;
+}
+
 
 /* Contenuto main */
 .sf-playlist {
@@ -49,6 +68,7 @@ body {
 }
 /* End menù utente */
 
+  
 .contenuto-lista {
   height: 100px;
   margin-top: 50px;
@@ -86,64 +106,82 @@ body {
   font-size: 12px;
 }
 
-/* controlli riproduzione brano */
-.sf-progress {
-  height: 0.2rem;
-  margin-top: 20px;
-  margin-left: 80px;
-  margin-right: 80px;
+
+
+
+/* View Desktop */
+@media (min-width: 1439px) {
+
+  .sidebar-sinistra {
+    display: block;
+  }
+
+  
+  
+  .sidebar-destra {
+    display: block;
+  }
+  
+
+  /* controlli riproduzione brano */
+  .sf-progress {
+    height: 0.2rem;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .sf-btn-control {
+    background-color: #272727;
+    color: #fff;
+  }
+
+  .sf-btn-control:hover {
+    color: #454545;
+  }
+
+  .sf-btn-control-play {
+    background-color: #fff;
+  }
+
+  .sf-btn-control-play:hover {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  /* end controlli riproduzione brano */
+
+  .sf-link {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .sf-link:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px #00c358 solid; 
+  }
+
+  .title {
+    color: #fff;
+  }
+
+  label {
+    color: #fff;
+    font-size: 9px;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td, 
+  tr {
+    font-size: 14px;
+  }
+
 }
-
-.sf-btn-control {
-  background-color: #272727;
-  color: #fff;
-}
-
-.sf-btn-control:hover {
-  color: #454545;
-}
-
-.sf-btn-control-play {
-  background-color: #fff;
-}
-
-.sf-btn-control-play:hover {
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-/* end controlli riproduzione brano */
-
-.sf-link {
-  font-size: 14px;
-  color: #fff;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.sf-link:hover {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 2px #00c358 solid; 
-}
-
-.title {
-  color: #fff;
-}
-
-label {
-  color: #fff;
-  font-size: 9px;
-}
-
-th {
-  font-size: 12px;
-}
-
-td, 
-tr {
-  font-size: 14px;
-}
-
 
 

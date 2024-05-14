@@ -33,35 +33,37 @@
 		<!-- Sidebar sinistra -->
 		<div class="row">
 			<div class="col-2 colore-primario sidebar-sinistra">
+				<!-- Menu sidebar sinistra -->
 				<ul class="list-group">
 					<li class="list-group-item sf-list-group-item border-0">
-						<i class="bi bi-three-dots"></i>
+						<button class="btn btn-outline-light border-0"><i class="bi bi-three-dots"></i></button>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<i class="bi bi-house"></i>
-						Home
+						<button class="btn btn-outline-light border-0"><i class="bi bi-house"></i></button>
+						<span class="menu-sidebar-sx">Home</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<i class="bi bi-search"></i>
-						Cerca
+						<button class="btn btn-outline-light border-0"><i class="bi bi-search"></i></button>
+						<span class="menu-sidebar-sx">Cerca</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<i class="bi bi-book"></i>
-						La tua libreria
+						<button class="btn btn-outline-light border-0"><i class="bi bi-book"></i></button>
+						<span class="menu-sidebar-sx">La tua libreria</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						
-						Crea playlist
+						<button class="btn bg-body-tertiary">+</button>
+						<span class="menu-sidebar-sx">Crea playlist</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						
-						Brani che ti piacciono
+						<button class="btn bg-body-tertiary">+</button>
+						<span class="menu-sidebar-sx">Brani che ti piacciono</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						
-						I tuoi episodi
+						<button class="btn bg-body-tertiary">+</button>
+						<span class="menu-sidebar-sx">I tuoi episodi</span>
 					</li>
 				</ul>
+				<!-- End menu sidebar sinistra -->
 
 				<ul class="list-group">
 					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
@@ -315,8 +317,8 @@
 
 
 		<div class="row colore-secondario fixed-bottom">
-
-			<div class="col-2 d-flex p-3">
+			<!-- Album selezionato per la riproduzione -->
+			<div class="col-2 d-flex justify-content center p-3">
 				<div class="col-4">
 					<img src="https://picsum.photos/80/80" alt="...">
 				</div>
@@ -328,34 +330,35 @@
 					<span><i class="bi bi-heart"></i></span>
 				</div>
 			</div>
+			<!-- End albun selezionato per la riproduzione -->
 
 			<!-- Barra di riproduzione -->
 			<div class="col-8">
+				<!-- Button di riproduzione -->
 				<div style="text-align: center; margin-top: 10px">
 					<button class="btn sf-btn-control">
 						<i class="bi bi-shuffle"></i>
 					</button>
-
 					<button class="btn sf-btn-control">
 						<i class="bi bi-skip-start-fill"></i>
 					</button>
-
 					<button class="btn rounded-circle sf-btn-control-play">
 						<i class="bi bi-play"></i>
 					</button>
-
 					<button class="btn sf-btn-control">
 						<i class="bi bi-skip-end-fill"></i>
 					</button>
-
 					<button class="btn sf-btn-control">
 						<i class="bi bi-repeat"></i>
 						<span class="fa fa-retweet"></span>
 					</button>
+					<!-- End button di riproduzione -->
 
+					<!-- Barra progress musica -->
 					<div class="progress sf-progress">
 						<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
+					<!-- End barra progress musica -->
 				</div>
 			</div>
 			<!-- End barra di riproduzione -->

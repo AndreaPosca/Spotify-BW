@@ -68,7 +68,6 @@ body {
 }
 /* End menù utente */
 
-  
 .contenuto-lista {
   height: 100px;
   margin-top: 50px;
@@ -107,8 +106,6 @@ body {
 }
 
 
-
-
 /* View Desktop */
 @media (min-width: 1439px) {
 
@@ -116,13 +113,15 @@ body {
     display: block;
   }
 
-  
-  
+  .menu-sidebar-sx {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
   .sidebar-destra {
     display: block;
   }
   
-
   /* controlli riproduzione brano */
   .sf-progress {
     height: 0.2rem;

@@ -32,11 +32,23 @@
 
 		<!-- Sidebar sinistra -->
 		<div class="row">
-			<div class="col-2 colore-primario sidebar-sinistra">
+			<div class="col-lg-2 colore-primario sidebar-sinistra">
 				<!-- Menu sidebar sinistra -->
 				<ul class="list-group">
 					<li class="list-group-item sf-list-group-item border-0">
-						<button class="btn btn-outline-light border-0"><i class="bi bi-three-dots"></i></button>
+						<img src="./assets/Spotify-logo.png" style="width: 100px" alt="Logo Agiendale Spotify">
+						<div class="btn-group">
+							<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-three-dots text-white"></i>
+							</button>
+							<ul class="dropdown-menu sf-dropdown-menu">
+								<li><a class="dropdown-item sf-dropdown-item" href="#">File</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Modifica</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Visualizza</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Riproduzione</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Assistenza</a></li>
+							</ul>
+						</div>		
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
 						<button class="btn btn-outline-light border-0"><i class="bi bi-house"></i></button>
@@ -51,55 +63,55 @@
 						<span class="menu-sidebar-sx">La tua libreria</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<button class="btn bg-body-tertiary">+</button>
+						<button class="btn bg-body-tertiary border-0 button-plus">+</button>
 						<span class="menu-sidebar-sx">Crea playlist</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<button class="btn bg-body-tertiary">+</button>
+						<button class="btn bg-body-tertiary border-0 button-brani"><i class="bi bi-heart-fill text-white"></i></button>
 						<span class="menu-sidebar-sx">Brani che ti piacciono</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<button class="btn bg-body-tertiary">+</button>
+						<button class="btn bg-body-tertiary border-0 button-episodi"><i class="bi bi-bookmark-fill"></i></button>
 						<span class="menu-sidebar-sx">I tuoi episodi</span>
 					</li>
 				</ul>
 				<!-- End menu sidebar sinistra -->
-
-				<ul class="list-group">
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
-					<li class="list-group-item sf-list-group-item border-0">testo libreria</li>
+				<hr class="divider linea">
+				<ul class="wrap list-group lista-libreria">
+					<li class="list-group-item sf-list-group-item border-0">early stage emily syndrome (sett-ott 2022)</li>
+					<li class="list-group-item sf-list-group-item border-0">Be The Young</li>
+					<li class="list-group-item sf-list-group-item border-0">"..." cit. kimiko (lug-ago 2022)</li>
+					<li class="list-group-item sf-list-group-item border-0">saggio vibes</li>
+					<li class="list-group-item sf-list-group-item border-0">main character energy (mag-giu 2022)</li>
+					<li class="list-group-item sf-list-group-item border-0">that fucking mood</li>
+					<li class="list-group-item sf-list-group-item border-0">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</li>
+					<li class="list-group-item sf-list-group-item border-0">An Emily Winchester kind of mood</li>
+					<li class="list-group-item sf-list-group-item border-0">landing page (mar-apr 2022)</li>
+					<li class="list-group-item sf-list-group-item border-0">2021 lol</li>
+					<li class="list-group-item sf-list-group-item border-0">cosa cazzo vuol dire questa affermazione (gen-fe...</li>
+					<li class="list-group-item sf-list-group-item border-0">honey and glass (nov-dic 2021)</li>
+					<li class="list-group-item sf-list-group-item border-0">(Revenge) training Arc</li>
+					<li class="list-group-item sf-list-group-item border-0">Lidia Emily</li>
+					<li class="list-group-item sf-list-group-item border-0">minecraft e nintendo swich (sep-oct 2021)</li>
+					<li class="list-group-item sf-list-group-item border-0">Frah Quintale Mix</li>
+					<li class="list-group-item sf-list-group-item border-0">Francesco Guccini Mix</li>
 				</ul>
 			</div>
 			<!-- End sidebar sinistra -->
 
 			<!-- Contenuto main playlist -->
-			<div class="flex-wrap col-12 col-lg-8 sf-playlist content-playlist">
+			<div class="container col-12 col-lg-8 sf-playlist">
 				
-				<div class="row d-flex align-items-center">
+				<div class="row d-flex justify-content-center align-items-center menu-nav">
 					<div class="col-2 p-0">
-						<a class="btn fs-3"><i class="bi bi-arrow-left-circle-fill"></i></a>
-						<a class="btn fs-3"><i class="bi bi-arrow-right-circle-fill"></i></a>
+						<a class="btn fs-3"><i class="bi bi-arrow-left-circle-fill freccia-sinistra"></i></a>
+						<a class="btn fs-3"><i class="bi bi-arrow-right-circle-fill freccia-destra"></i></a>
 					</div>
 					
 
-					<div class="col-10 justify-content-end">
+					<div class="col-10 justify-content-end mt-3">
 						<div class="dropdown float-end sf-dropdown">
-							<button class="btn dropdown-toggle text-white p-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<button class="btn dropdown-toggle text-white p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 								<img src="https://picsum.photos/30" class="img-fluid rounded-circle"> Lidia Nautilus ...
 							</button>
 							<ul class="dropdown-menu sf-dropdown-menu">
@@ -114,12 +126,14 @@
 					</div>
 				</div>
 				
-				<div class="row">
+				
+				
+				<div class="row content-hero">
 					<div class="col-2">
-						<img src="https://picsum.photos/200/200" class="img-fluid p-2">
+						<img src="https://picsum.photos/400/" class="img-fluid mt-3">
 					</div>
 					<div class="col-10 mt-5">
-						<label>ALBUM</label>
+						<span class="text-white">ALBUM</span>
 						<h1 class="title">Gioventù bruciata</h1>
 						<div class="d-flex justify-content-start align-items-center mt-3">
 							<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image album">
@@ -129,7 +143,7 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 color-content">
 						<div class="d-flex align-items-center contenuto-lista">
 							<button class="btn rounded-circle me-5 sf-btn-primario">
 								<i class="bi bi-play-fill fs-4 text-white"></i>
@@ -139,8 +153,8 @@
 						</div>
 						
 						<div>
-							<!-- Elenco tabella canzini -->
-							<table class="table table-dark table-responsive table-hover">
+							<!-- Elenco tabella canzoni -->
+							<table class="table table-responsive" id="table-hover">
 								<thead>
 									<tr>
 										<th scope="col">#</th>
@@ -271,7 +285,7 @@
 
 			
 			
-			<div class="col-2 colore-primario sidebar-destra">
+			<div class="col-lg-2 colore-primario sidebar-destra">
 				<h5 class="title">Attività amici</h5>
 
 				<div class="card-img d-flex mb-5">

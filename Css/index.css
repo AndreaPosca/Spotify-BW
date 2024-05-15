@@ -2,190 +2,299 @@
 
 /* 
     CSS Custom
-    album.html
+    index.html
 
     BuildWeek n.3
     Group n. 4
 */
 
 /* Qui inizia lo stile comune a tutte le pagine */
+/* 
+    CSS Custom
+    album.html
+
+    BuildWeek n.3
+    Group n. 4
+*/
 
 /* Impostazioni globali */
 body {
-    font-size: 12px;
-    background-color: #272727;
+  font-size: 12px;
+  background-color: #272727;
+}
+
+.colore-primario {
+  background-color: #121212;
+}
+
+.colore-secondario {
+  background-color: #272727;
+}
+/* end impostazioni globali */
+
+
+/* Mobile */
+.sidebar-sinistra {
+  display: none;
+}
+
+.sidebar-destra {
+  display: none;
+}
+
+/* Contenuto main */
+.sf-playlist {
+  background-color: #121212;
+  height: 100%; 
+  overflow-y: scroll;
+}
+
+/* Menù utente */
+.sf-dropdown {
+  background-color: #272727;
+  font-size: 12px;
+  border-radius: 25px;
+}
+
+.menu-nav {
+  height: 100px;
+  background-color: #a4944c;
+}
+
+.freccia-sinistra,
+.freccia-destra {
+  font-size: 1.8rem;
+}
+
+.freccia-sinistra {
+  margin-left: 15px; 
+}
+
+.freccia-sinistra:hover {
+  
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.freccia-destra:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.content-hero {
+  height: 230px;
+  background-color: #a4944c;
+}
+
+/* .sf-dropdown:hover {
+  color: #fff;
+} */
+
+.sf-dropdown-menu {
+  background-color: #272727;
+  color: #fff;
+}
+
+.sf-dropdown-item {
+  background-color: #272727;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* .sf-dropdown-item:hover {
+  background-color: #151515;
+  color: #fff;
+} */
+/* End menù utente */
+
+.contenuto-lista {
+  height: 100px;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.sf-btn-primario {
+  background-color: #00c358;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+/* .sf-btn-primario:hover {
+  border: 1px solid #fff;
+  color: #fff;
+} */
+
+.sf-btn-play {
+  color: #fff;
+}
+
+
+.sf-list-group-item {
+  background-color: #121212;
+  color: #fff;  
+}
+
+/* .sf-list-group-item:hover {
+  background-color: #272727;
+  color: #fff;  
+} */
+
+
+/* View Desktop */
+@media (min-width: 1439px) {
+
+  #logo-spotify {
+    width: 100px;
   }
-  
-  .colore-primario {
-    background-color: #121212;
+
+  .linea {
+    width: 100%;
+    color: #272727;
   }
-  
-  .colore-secondario {
-    background-color: #272727;
+
+  .button-plus i {
+    color: #000;
   }
-  /* end impostazioni globali */
-  
-  
-  /* Mobile */
-  .sidebar-sinistra {
-    display: none;
+
+  .button-brani {
+    background: rgb(39,11,131);
+    background: linear-gradient(45deg, rgba(39,11,131,1) 0%, rgba(87,78,162,1) 6%, rgba(123,142,154,1) 100%);
   }
-  
-  .sidebar-destra {
-    display: none;
+
+  .button-episodi {
+    background: rgb(0,69,55);
+    background: linear-gradient(45deg, rgba(0,69,55,1) 0%, rgba(0,69,55,1) 6%, rgba(0,69,55,1) 100%);
   }
-  
-  
-  /* Contenuto main */
-  .sf-playlist {
-    background-color: #121212;
-    height: 830px; 
+
+  .button-episodi i {
+    color: #149643;
+  }
+
+  .lista-libreria {
+    height: 100vh;
     overflow-y: scroll;
   }
+
+  .lista-libreria li:hover {
+    cursor: pointer;
+    color: #149643;
+  }
+
+  .sidebar-sinistra {
+    display: block;
+  }
+
+  .menu-sidebar-sx {
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .menu-sidebar-sx:hover {
+    cursor: pointer;
+    color: #149643;
+  }
+
+  .sidebar-destra {
+    display: block;
+    
+  }
+
+  .color-content {
+    background: rgb(126,113,63);
+    background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
+  }
+
+  #table-hover th,
+  #table-hover td {
+    background-color: transparent;
+    color: #fff;
+  }
   
-  /* Menù utente */
-  .sf-dropdown {
+  /* controlli riproduzione brano */
+  .sf-progress {
+    height: 0.2rem;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .sf-progress-2 {
+    height: 0.2rem;
+    margin-top: -15px;
+    margin-left: 140px;
+    margin-right: 80px;
+  }
+
+  .sf-btn-control {
     background-color: #272727;
-    font-size: 12px;
-    border-radius: 25px;
-    opacity: 0.5;
-  }
-  
-  .sf-dropdown:hover {
     color: #fff;
   }
-  
-  .sf-dropdown-menu {
-    background-color: #272727;
+/* 
+  .sf-btn-control:hover {
+    color: #454545;
+  } */
+
+  .sf-btn-control-play {
+    background-color: #fff;
+  }
+
+  .sf-btn-control-play:hover {
     color: #fff;
-  }
-  
-  .sf-dropdown-item {
-    background-color: #272727;
-    color: #fff;
-    font-size: 12px;
-  }
-  
-  .sf-dropdown-item:hover {
-    background-color: #151515;
-    color: #fff;
-  }
-  /* End menù utente */
-  
-  .contenuto-lista {
-    height: 100px;
-    margin-top: 50px;
-    padding: 10px;
-  }
-  
-  .sf-btn-primario {
-    background-color: #00c358;
-    border-radius: 20px;
-    font-size: 10px;
-  }
-  
-  .sf-btn-primario:hover {
     border: 1px solid #fff;
+  }
+
+  /* end controlli riproduzione brano */
+
+  .sf-link {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .sf-link:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px #00c358 solid; 
+  }
+
+  .title {
     color: #fff;
   }
-  
-  .sf-btn-play {
+
+  label {
     color: #fff;
+    font-size: 9px;
   }
-  
-  
-  .sf-list-group-item {
-    background-color: #121212;
-    color: #fff;  
+
+  th {
+    font-size: 12px;
   }
-  
-  .sf-list-group-item:hover {
-    background-color: #272727;
-    color: #fff;  
+
+  td, 
+  tr {
+    font-size: 14px;
   }
-  
+
   .sf-name-music {
     color: #fff;
     font-size: 12px;
+    margin-left: -50px;
   }
-  
-  
-  /* View Desktop */
-  @media (min-width: 1439px) {
-  
-    .sidebar-sinistra {
-      display: block;
-    }
-  
-    .menu-sidebar-sx {
-      margin-left: 10px;
-      font-size: 0.9rem;
-    }
-  
-    .sidebar-destra {
-      display: block;
-    }
-    
-    /* controlli riproduzione brano */
-    .sf-progress {
-      height: 0.2rem;
-      margin-top: 20px;
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-  
-    .sf-btn-control {
-      background-color: #272727;
-      color: #fff;
-    }
-  
-    .sf-btn-control:hover {
-      color: #454545;
-    }
-  
-    .sf-btn-control-play {
-      background-color: #fff;
-    }
-  
-    .sf-btn-control-play:hover {
-      color: #fff;
-      border: 1px solid #fff;
-    }
-  
-    /* end controlli riproduzione brano */
-  
-    .sf-link {
-      font-size: 14px;
-      color: #fff;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-  
-    .sf-link:hover {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: 2px #00c358 solid; 
-    }
-  
-    .title {
-      color: #fff;
-    }
-  
-    label {
-      color: #fff;
-      font-size: 9px;
-    }
-  
-    th {
-      font-size: 12px;
-    }
-  
-    td, 
-    tr {
-      font-size: 14px;
-    }
-  
+
+  .riproduzione {
+    text-align: center; 
+    margin-top: 50px
   }
-  
-  
+
+  .riproduzione-volume {
+    width: 100%;
+  }
+
+  .button-arrows {
+    margin-left: 110px;
+  }
+
+}
+
   /* Qui finisce lo stile comune a tutte le pagine */

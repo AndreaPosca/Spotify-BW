@@ -64,7 +64,7 @@
 						<span class="menu-sidebar-sx">La tua libreria</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<button class="btn bg-body-tertiary border-0 button-plus">+</button>
+						<button class="btn bg-body-tertiary border-0 button-plus"><i class="bi bi-plus-lg"></i></button>
 						<span class="menu-sidebar-sx">Crea playlist</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
@@ -79,22 +79,22 @@
 				</ul>
 				<!-- End menu sidebar sinistra -->
 				<hr class="divider linea">
-				<ul class="wrap list-group lista-libreria">
+				<ul class="list-group lista-libreria">
+					<li class="list-group-item sf-list-group-item border-0">😍😍 the best of group number 4 ❤️❤️❤️</li>
 					<li class="list-group-item sf-list-group-item border-0">early stage emily syndrome (sett-ott 2022)</li>
 					<li class="list-group-item sf-list-group-item border-0">Be The Young</li>
 					<li class="list-group-item sf-list-group-item border-0">"..." cit. kimiko (lug-ago 2022)</li>
-					<li class="list-group-item sf-list-group-item border-0">saggio vibes</li>
+					<li class="list-group-item sf-list-group-item border-0">saggio vibes 💃 ▢ 👯‍♀️</li>
 					<li class="list-group-item sf-list-group-item border-0">main character energy (mag-giu 2022)</li>
-					<li class="list-group-item sf-list-group-item border-0">that fucking mood</li>
+					<li class="list-group-item sf-list-group-item border-0">that fucking mood 🔪☠️</li>
 					<li class="list-group-item sf-list-group-item border-0">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</li>
-					<li class="list-group-item sf-list-group-item border-0">An Emily Winchester kind of mood</li>
+					<li class="list-group-item sf-list-group-item border-0">An Emily Winchester kind of mood 🔪☝️</li>
 					<li class="list-group-item sf-list-group-item border-0">landing page (mar-apr 2022)</li>
 					<li class="list-group-item sf-list-group-item border-0">2021 lol</li>
-					<li class="list-group-item sf-list-group-item border-0">cosa cazzo vuol dire questa affermazione (gen-fe...
-					</li>
+					<li class="list-group-item sf-list-group-item border-0">cosa cazzo vuol dire questa affermazione (gen-fe...</li>
 					<li class="list-group-item sf-list-group-item border-0">honey and glass (nov-dic 2021)</li>
-					<li class="list-group-item sf-list-group-item border-0">(Revenge) training Arc</li>
-					<li class="list-group-item sf-list-group-item border-0">Lidia Emily</li>
+					<li class="list-group-item sf-list-group-item border-0">(Revenge) training Arc 🦍</li>
+					<li class="list-group-item sf-list-group-item border-0">Lidia 🤝 Emily</li>
 					<li class="list-group-item sf-list-group-item border-0">minecraft e nintendo swich (sep-oct 2021)</li>
 					<li class="list-group-item sf-list-group-item border-0">Frah Quintale Mix</li>
 					<li class="list-group-item sf-list-group-item border-0">Francesco Guccini Mix</li>
@@ -157,7 +157,21 @@
 								<i class="bi bi-play-fill fs-4 text-white"></i>
 							</button>
 							<span class="me-5"><i class="bi bi-heart fs-4 text-white"></i></span>
-							<span><i class="bi bi-three-dots fs-4 text-white"></i></span>
+							<div class="btn-group">
+								<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="bi bi-three-dots fs-4 text-white"></i>
+								</button>
+								<ul class="dropdown-menu sf-dropdown-menu">
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Aggiungi a La tua libreria</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-journal-plus"></i> Aggiungi in coda</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-exclamation-octagon"></i> Segnala</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-download"></i> Scarica</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Escludi dal profilo relativo ai gusti</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-folder"></i> Aggiungi cartella</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-lg"></i> Aggiungi un'altra playlist</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-box-arrow-up"></i> Condividi</a></li>
+								</ul>
+							</div>
 						</div>
 						<!-- End Section comandi principali hero play -->
 
@@ -369,15 +383,13 @@
 						</div>
 					</div>
 				</div>
-
-				
 			</div>
 			<!-- End albun selezionato per la riproduzione -->
 
 			<!-- Barra di riproduzione -->
 			<div class="col-lg-8">
 				<!-- Button di riproduzione -->
-				<div style="text-align: center; margin-top: 10px">
+				<div class="riproduzione">
 					<button class="btn sf-btn-control">
 						<i class="bi bi-shuffle"></i>
 					</button>
@@ -403,17 +415,16 @@
 					<!-- End barra progress musica -->
 				</div>
 			</div>
-			<div class="col-lg-2">
-				<div class="">
-					<i class="bi bi-mic text-white fs-5"></i>
-					<i class="bi bi-volume-up text-white fs-5"></i>
-					
+			<div class="col-lg-2 mt-5">
+				<span class="button-mic"><i class="bi bi-mic text-white fs-5 me-2"></i></span>
+				<span class="button-list"><i class="bi bi-view-list text-white fs-5 me-2"></i></span>
+				<span class="burron-speaker"><i class="bi bi-speaker text-white fs-5 me-2"></i></span>
+				<span class="buttton-volume"><i class="bi bi-volume-up text-white fs-5 me-2"></i></span>
+				<span class="button-arrows"><i class="bi bi-arrows-angle-expand text-white fs-5 me-2"></i></span>
+				<div class="progress sf-progress-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+					<div class="progress-bar" style="width: 25%"></div>
 				</div>
 				
-				<div class="progress sf-progress-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-					<div class="progress-bar" style="width: 50%"></div>
-				</div>
-			</div>
 			<!-- End barra di riproduzione -->
 
 			<!-- Comandi di riproduzione -->

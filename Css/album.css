@@ -164,6 +164,11 @@ body {
     overflow-y: scroll;
   }
 
+  .lista-libreria li:hover {
+    cursor: pointer;
+    color: #149643;
+  }
+
   .sidebar-sinistra {
     display: block;
   }
@@ -171,6 +176,11 @@ body {
   .menu-sidebar-sx {
     margin-left: 10px;
     font-size: 0.9rem;
+  }
+
+  .menu-sidebar-sx:hover {
+    cursor: pointer;
+    color: #149643;
   }
 
   .sidebar-destra {
@@ -199,8 +209,8 @@ body {
 
   .sf-progress-2 {
     height: 0.2rem;
-    margin-top: 40px;
-    margin-left: 80px;
+    margin-top: -15px;
+    margin-left: 140px;
     margin-right: 80px;
   }
 
@@ -259,6 +269,19 @@ body {
     color: #fff;
     font-size: 12px;
     margin-left: -50px;
+  }
+
+  .riproduzione {
+    text-align: center; 
+    margin-top: 50px
+  }
+
+  .riproduzione-volume {
+    width: 100%;
+  }
+
+  .button-arrows {
+    margin-left: 110px;
   }
 
 }

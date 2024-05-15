@@ -128,11 +128,6 @@ body {
   color: #fff;  
 } */
 
-.sf-name-music {
-  color: #fff;
-  font-size: 12px;
-}
-
 
 /* View Desktop */
 @media (min-width: 1439px) {
@@ -202,6 +197,13 @@ body {
     margin-right: 80px;
   }
 
+  .sf-progress-2 {
+    height: 0.2rem;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
   .sf-btn-control {
     background-color: #272727;
     color: #fff;
@@ -251,6 +253,12 @@ body {
   td, 
   tr {
     font-size: 14px;
+  }
+
+  .sf-name-music {
+    color: #fff;
+    font-size: 12px;
+    margin-left: -50px;
   }
 
 }

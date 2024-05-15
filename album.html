@@ -9,7 +9,8 @@
 	<!-- Keyword -->
 	<meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
 	<!-- Author -->
-	<meta name="author" content="Andrea Posca, Gabriele de Matteis, Ilaria Montella, Gianluca Chiaravalloti, Genesis Miranda">
+	<meta name="author"
+		content="Andrea Posca, Gabriele de Matteis, Ilaria Montella, Gianluca Chiaravalloti, Genesis Miranda">
 
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +21,7 @@
 
 	<!-- Custom CSS global -->
 	<link rel="stylesheet" href="./Css/global.css">
-	
+
 	<!-- Custom CSS album -->
 	<link rel="stylesheet" href="./Css/album.css">
 	<title>Album</title>
@@ -48,7 +49,7 @@
 								<li><a class="dropdown-item sf-dropdown-item" href="#">Riproduzione</a></li>
 								<li><a class="dropdown-item sf-dropdown-item" href="#">Assistenza</a></li>
 							</ul>
-						</div>		
+						</div>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
 						<button class="btn btn-outline-light border-0"><i class="bi bi-house"></i></button>
@@ -67,7 +68,8 @@
 						<span class="menu-sidebar-sx">Crea playlist</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
-						<button class="btn bg-body-tertiary border-0 button-brani"><i class="bi bi-heart-fill text-white"></i></button>
+						<button class="btn bg-body-tertiary border-0 button-brani"><i
+								class="bi bi-heart-fill text-white"></i></button>
 						<span class="menu-sidebar-sx">Brani che ti piacciono</span>
 					</li>
 					<li class="list-group-item sf-list-group-item border-0">
@@ -88,7 +90,8 @@
 					<li class="list-group-item sf-list-group-item border-0">An Emily Winchester kind of mood</li>
 					<li class="list-group-item sf-list-group-item border-0">landing page (mar-apr 2022)</li>
 					<li class="list-group-item sf-list-group-item border-0">2021 lol</li>
-					<li class="list-group-item sf-list-group-item border-0">cosa cazzo vuol dire questa affermazione (gen-fe...</li>
+					<li class="list-group-item sf-list-group-item border-0">cosa cazzo vuol dire questa affermazione (gen-fe...
+					</li>
 					<li class="list-group-item sf-list-group-item border-0">honey and glass (nov-dic 2021)</li>
 					<li class="list-group-item sf-list-group-item border-0">(Revenge) training Arc</li>
 					<li class="list-group-item sf-list-group-item border-0">Lidia Emily</li>
@@ -101,7 +104,7 @@
 
 			<!-- Contenuto main playlist -->
 			<div class="container col-12 col-lg-8 sf-playlist">
-				
+
 				<div class="row d-flex justify-content-center align-items-center menu-nav">
 					<!-- Section freccie indietro e avanti -->
 					<div class="col-2 p-0">
@@ -113,7 +116,8 @@
 					<!-- Section menu user -->
 					<div class="col-10 justify-content-end mt-3">
 						<div class="dropdown float-end sf-dropdown">
-							<button class="btn dropdown-toggle text-white p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<button class="btn dropdown-toggle text-white p-2" type="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
 								<img src="https://picsum.photos/30" class="img-fluid rounded-circle"> Lidia Nautilus ...
 							</button>
 							<ul class="dropdown-menu sf-dropdown-menu">
@@ -128,7 +132,7 @@
 					</div>
 					<!-- End Section menu user -->
 				</div>
-				
+
 				<!-- Section Hero -->
 				<div class="row content-hero">
 					<div class="col-2">
@@ -139,12 +143,12 @@
 						<h1 class="title">Gioventù bruciata</h1>
 						<div class="d-flex justify-content-start align-items-center mt-3">
 							<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image album">
-							<p class="text-white m-0">Pinguini Tattici Nucleari - 2017 - 12 brani, 53 min 20 sec.</p>
+							<p class="text-white m-0">Pinguini Tattici Nucleari • 2017 • 12 brani, 53 min 20 sec.</p>
 						</div>
 					</div>
 				</div>
 				<!-- Section Hero -->
-				
+
 				<div class="row">
 					<div class="col-12 color-content">
 						<!-- Section comandi principali hero play -->
@@ -156,7 +160,7 @@
 							<span><i class="bi bi-three-dots fs-4 text-white"></i></span>
 						</div>
 						<!-- End Section comandi principali hero play -->
-						
+
 						<div>
 							<!-- Elenco tabella canzoni -->
 							<table class="table table-responsive" id="table-hover">
@@ -286,50 +290,59 @@
 			</div>
 			<!-- End main playlist -->
 
-			<!-- Sidebar destra Attività amici-->	
+			<!-- Sidebar destra Attività amici-->
 			<div class="col-lg-2 colore-primario sidebar-destra">
-				<h5 class="title">Attività amici</h5>
+				<div class="d-flex justify-content-between align-content-center mt-4">
+				<h5 class="title fs-5 mt-1">Attività amici</h5>
+					<div>
+						<i class="bi bi-person-add text-white me-2 fs-5"></i>
+						<i class="bi bi-x-lg text-white me-2 fs-5"></i>
+					</div>
+				</div>
 
 				<!-- Section Card user amici -->
+				<div class="card-img d-flex mt-5 mb-5">
+					<div class="me-1">
+						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+					</div>
+					<div>
+						<h5 class="card-title text-white fs-6 me-4">Charlie Hookham</h5>
+						<p class="card-text"><small class="text-white">In Camera • Yumi Zouma</small></p>
+						<p class="card-text"><small class="text-white"><i class="bi bi-record-circle"></i> EP III</small></p>
+					</div>
+					<div class="me-5">
+						<h5 class="text-white fs-6">4 ore</h5>
+					</div>
+				</div>
+
 				<div class="card-img d-flex mb-5">
-            <div class="me-2">
-              <img src="https://picsum.photos/50" class="rounded-circle" alt="Image user">
-            </div>
-            <div>
-              <h5 class="card-title text-white">Charlie Hookham</h5>
-              <p class="card-text"><small class="text-white">In Camera . Yumi Zouma</small></p>
-            </div>
-						<div>
-							<h5 class="text-white">4 ore</h5>
-						</div>
-          </div>
+					<div class="me-1">
+						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+					</div>
 
-					<div class="card-img d-flex mb-5">
-            <div class="me-2">
-              <img src="https://picsum.photos/50" class="rounded-circle" alt="Image user">
-            </div>
-						
-            <div>
-              <h5 class="card-title text-white">lightdark02</h5>
-              <p class="card-text"><small class="text-white">Aimed to Kill . Jade LeMac</small></p>
-            </div>
-						<div>
-							<h5 class="text-white">4 ore</h5>
-						</div>
-          </div>
+					<div>
+						<h5 class="card-title text-white fs-6 me-4">lightdark02</h5>
+						<p class="card-text text-white">Aimed to Kill • Jade LeMac</p>
+						<p class="card-text text-white"><i class="bi bi-record-circle"></i> Aimed to Kill</p>
+					</div>
+					<div>
+						<h5 class="text-white fs-6">4 ore</h5>
+					</div>
+				</div>
 
-					<div class="card-img d-flex mb-5">
-            <div class="me-2">
-              <img src="https://picsum.photos/50" class="rounded-circle" alt="Image user">
-            </div>
-            <div>
-              <h5 class="card-title text-white">Valeria Traverso</h5>
-              <p class="card-text"><small class="text-white">New Kings . Sleeping Wolf</small></p>
-            </div>
-						<div>
-							<h5 class="text-white">4 ore</h5>
-						</div>
-          </div>
+				<div class="card-img d-flex mb-5">
+					<div class="me-1">
+						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+					</div>
+					<div>
+						<h5 class="card-title text-white fs-6 me-4">Valeria Traverso</h5>
+						<p class="card-text text-white">New Kings • Sleeping Wolf</p>
+						<p class="card-text text-white"><i class="bi bi-music-note-beamed"></i> Twint Badass mood</p>
+					</div>
+					<div>
+						<h5 class="text-white fs-6">4 ore</h5>
+					</div>
+				</div>
 			</div>
 			<!-- End Section card user amici -->
 		</div>
@@ -338,22 +351,31 @@
 
 		<div class="row colore-secondario fixed-bottom">
 			<!-- Album selezionato per la riproduzione -->
-			<div class="col-2 d-flex justify-content center p-3">
-				<div class="col-4">
-					<img src="https://picsum.photos/80/80" alt="...">
+			<div class="col-lg-2 d-flex justify-content-between align-items-center p-4">
+
+				<div class="card border-0 bg-transparent">
+					<div class="row justify-content-lg-between align-items-center g-0">
+						<div class="col-lg-3">
+							<img src="https://picsum.photos/60/60" class="img-fluid" alt="...">
+						</div>
+						<div class="col-lg-8">
+							<div class="card-body">
+								<h6 class="card-title text-white">Fat Funny Friend</h6>
+								<p class="card-text text-white">Maddie Zahm</p>
+							</div>
+						</div>
+						<div class="col-lg-1 g-0">
+							<i class="bi bi-heart text-white"></i>
+						</div>
+					</div>
 				</div>
-				<div class="col-6">
-					<p class="sf-name-music">Fat Funny Friend</p>
-					<p class="sf-name-music">Maddie Zahm</p>
-				</div>
-				<div class="col-2">
-					<span><i class="bi bi-heart"></i></span>
-				</div>
+
+				
 			</div>
 			<!-- End albun selezionato per la riproduzione -->
 
 			<!-- Barra di riproduzione -->
-			<div class="col-8">
+			<div class="col-lg-8">
 				<!-- Button di riproduzione -->
 				<div style="text-align: center; margin-top: 10px">
 					<button class="btn sf-btn-control">
@@ -379,6 +401,17 @@
 						<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 					<!-- End barra progress musica -->
+				</div>
+			</div>
+			<div class="col-lg-2">
+				<div class="">
+					<i class="bi bi-mic text-white fs-5"></i>
+					<i class="bi bi-volume-up text-white fs-5"></i>
+					
+				</div>
+				
+				<div class="progress sf-progress-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+					<div class="progress-bar" style="width: 50%"></div>
 				</div>
 			</div>
 			<!-- End barra di riproduzione -->

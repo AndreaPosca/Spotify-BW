@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })
     .then((response) => {
+      console.log(response);
       // Verifico la risposta del server
       if (!response.ok) {
       throw new Error("Risposta networks non andata a buon fine.");
@@ -55,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
           <span class="text-white">Artista verificato</span>
           <h1 class="title">${artista.name}</h1>
           <div class="d-flex justify-content-start align-items-center mt-3">
-            <img src="${artista.picture_medium}" class="rounded-circle me-2" alt="${artista.name}">
+            <img src="${artista.picture_small}" class="rounded-circle me-2" alt="${artista.name}">
             <p class="text-white m-0">${artista.nb_fan} ascoltatori mensili</p>
           </div>
         </div>
-      `;
+      `
     };
 
 });

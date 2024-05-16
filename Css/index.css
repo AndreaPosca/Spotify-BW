@@ -299,6 +299,7 @@ body {
 
   /* Qui finisce lo stile comune a tutte le pagine */
 
+  /* INDEX */
   #pop, #rock, #rap, #elettronica, #metal, #reggaeton {
     border-radius: 20px;
     background-color: #00c358;
@@ -335,4 +336,26 @@ body {
   .body h3 {
     margin-left: 10px;
     color: white;
+  }
+
+  #taylor .row img, #metallica .row img, #eminem .row img{
+    width:150px;
+  }
+
+  .main-head {
+    margin-bottom: 170px;
+  }
+
+  #taylor, #metallica, #eminem {
+    margin-bottom: 20px;
+  }
+
+  #taylor h4, #metallica h4, #eminem h4 {
+    overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+  }
+
+  #taylor .row, #metallica .row, #eminem .row {
+    gap: 10px;
   }

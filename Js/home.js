@@ -29,7 +29,7 @@ const creaCard = async (elements) => {
         console.log(artist)
 
         const cardContainer = document.createElement('div');
-        cardContainer.classList.add(`col-12`);
+        cardContainer.classList.add(`row`);
         element.parentNode.appendChild(cardContainer);
         console.log(element.parentNode)
         //infine faccio partire la funzione della fetch della home, passandocome parametro,
@@ -65,14 +65,28 @@ const fetchHome = async(artist, divAlbum) => {
                 }                 
             })
             datiCard.forEach(album => {
-                const row = document.createElement('div')
-                row.classList.add('row')
-                divAlbum.appendChild(row)
+                const col =document.createElement('div');
+                col.classList.add('col', 'card');
+                divAlbum.appendChild(col)
 
                 const img = document.createElement('img');
+                img.classList.add('card-img-top');
+                img.src = album.cover_medium;
+                col.append(img);
                 
-                img.src = album.cover_small;
-                row.append(img)                     
+                const body = document.createElement('div');
+                body.classList.add('card-body');
+                col.appendChild(body);
+
+                const title = document.createElement('h4');
+                title.classList.add('card-title');
+                body.appendChild(title);
+                title.innerText = album.title
+
+                const text = document.createElement('p');
+                text.classList.add('card-text');
+                body.appendChild(text)
+                text.innerText = album.title
             })
         })
 }

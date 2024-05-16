@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /**
  * Visualizza il titolo nella hero del document html
- */
+*/
 function visualizzaTitolo(album) {
   //console.log(album);
   const visualizzaTitolo = document.getElementById("visualizzaTitolo");
@@ -73,7 +73,7 @@ function visualizzaTitolo(album) {
 
 /**
  * Visualizza la lista delle canzoni complete dell'album selezionato in forma tabellare
- */
+*/
 function listaCanzoniAlbum(album) {
   //console.log(album.tracks.data);
   const elencoCanzoni = document.getElementById("elencoCanzoni");
@@ -110,7 +110,6 @@ function listaCanzoniAlbum(album) {
       const viewAlbumRiproduzione = document.getElementById("viewAlbumRiproduzione");
       const sfBiHeart = document.getElementById("sf-bi-heart");
       
-      
       titoloRiproduzione.textContent = `${canzone.title}`;
       titoloRiproduzioneAlbum.textContent = `${canzone.album.title}`;
       
@@ -145,7 +144,6 @@ function togglePlayPause() {
     // Cambia il testo del bottone in "Pausa"
     playPrimario.innerHTML = `<i class="bi bi-pause fs-4 text-white"></i>`;
     controlPlay.innerHTML = `<i class="bi bi-pause"></i>`;
-    // document.querySelector('button').innerText = 'Pausa';
     isPlay = true;
     // Aggiorna la progress bar mentre la canzone viene riprodotta
     audio.addEventListener("timeupdate", updateProgressBar);
@@ -166,15 +164,28 @@ function togglePlayPause() {
     playPrimario.innerHTML = `<i class="bi bi-play fs-4 text-white"></i>`;
     controlPlay.innerHTML = `<i class="bi bi-play"></i>`;
     isPlay = false;
-    
   }
 };
+
+
 function updateProgressBar() {
   // Calcola la percentuale di avanzamento della canzone
   let progress = (audio.currentTime / audio.duration) * 100;
   // Aggiorna la larghezza della progress bar
   progressBar.style.width = progress + "%";
 };
+
+const cerca = document.getElementById("cerca");
+const inputCerca = document.getElementById("inputCerca");
+
+cerca.addEventListener("click", () => {
+  if (inputCerca.classList.contains("d-none")) {
+    inputCerca.classList.remove("d-none");
+  } else {
+    inputCerca.classList.add("d-none");
+  }
+  
+})
 
 
 

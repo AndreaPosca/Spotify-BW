@@ -128,6 +128,10 @@ body {
   color: #fff;  
 } */
 
+#picturArtist {
+  width: 40px;
+}
+
 
 /* View Desktop */
 @media (min-width: 1439px) {

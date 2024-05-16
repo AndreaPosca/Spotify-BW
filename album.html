@@ -29,11 +29,11 @@
 
 <body>
 	<!-- Contenuto principale -->
-	<div class="container-fluid">
+	<main class="container-fluid">
 
-		<!-- Sidebar sinistra -->
-		<div class="row">
-			<div class="col-lg-2 colore-primario sidebar-sinistra">
+		<section class="row">
+			<!-- Sidebar sinistra -->
+			<aside class="col-lg-2 colore-primario sidebar-sinistra">
 				<!-- Menu sidebar sinistra -->
 				<ul class="list-group">
 					<li class="list-group-item sf-list-group-item border-0">
@@ -100,11 +100,11 @@
 					<li class="list-group-item sf-list-group-item border-0">Frah Quintale Mix</li>
 					<li class="list-group-item sf-list-group-item border-0">Francesco Guccini Mix</li>
 				</ul>
-			</div>
+			</aside>
 			<!-- End sidebar sinistra -->
 
 			<!-- Contenuto main playlist -->
-			<div class="container col-12 col-lg-8 sf-playlist">
+			<section class="container col-12 col-lg-8 sf-playlist">
 
 				<div class="row d-flex justify-content-center align-items-center menu-nav">
 					<!-- Section freccie indietro e avanti -->
@@ -135,19 +135,9 @@
 				</div>
 
 				<!-- Section Hero -->
-				<div class="row content-hero">
-					<div class="col-2">
-						<img src="https://picsum.photos/400/" class="img-fluid mt-3">
-					</div>
-					<div class="col-10 mt-5">
-						<span class="text-white">ALBUM</span>
-						<h1 class="title">Gioventù bruciata</h1>
-						<div class="d-flex justify-content-start align-items-center mt-3">
-							<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image album">
-							<p class="text-white m-0">Pinguini Tattici Nucleari • 2017 • 12 brani, 53 min 20 sec.</p>
-						</div>
-					</div>
-				</div>
+				<section class="row content-hero" id="visualizzaTitolo">
+					<!-- Viene inserito il contenuto del titolo dell'album -->
+				</section>
 				<!-- Section Hero -->
 
 				<div class="row">
@@ -183,8 +173,8 @@
 						</div>
 						<!-- End Section comandi principali hero play -->
 
-						<div>
-							<!-- Elenco tabella canzoni -->
+						<!-- Elenco tabella canzoni -->
+						<section id="listaCanzoni">
 							<table class="table table-responsive" id="table-hover">
 								<thead>
 									<tr>
@@ -194,122 +184,16 @@
 										<th scope="col"><i class="bi bi-clock"></i></th>
 									</tr>
 								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>
-											<p>Montanelli - Intro</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>694.578</td>
-										<td>1:28</td>
-									</tr>
-									<tr>
-										<th scope="row">2</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>5.585.178</td>
-										<td>4.41</td>
-									</tr>
-									<tr>
-										<th scope="row">3</th>
-										<td>
-											<p>Gioventù Bruciata</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>3.412.342</td>
-										<td>5.24</td>
-									</tr>
-									<tr>
-										<th scope="row">4</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>694.578</td>
-										<td>1:28</td>
-									</tr>
-									<tr>
-										<th scope="row">5</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>5.585.178</td>
-										<td>4.41</td>
-									</tr>
-									<tr>
-										<th scope="row">6</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>3.412.342</td>
-										<td>5.24</td>
-									</tr>
-									<tr>
-										<th scope="row">7</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>694.578</td>
-										<td>1:28</td>
-									</tr>
-									<tr>
-										<th scope="row">8</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>5.585.178</td>
-										<td>4.41</td>
-									</tr>
-									<tr>
-										<th scope="row">9</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>5.585.178</td>
-										<td>4.41</td>
-									</tr>
-									<tr>
-										<th scope="row">10</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>5.585.178</td>
-										<td>4.41</td>
-									</tr>
-									<tr>
-										<th scope="row">11</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>5.585.178</td>
-										<td>4.41</td>
-									</tr>
-									<tr>
-										<th scope="row">12</th>
-										<td>
-											<p>Sciare</p>
-											<p>Pinguini Tattici Nucleari</p>
-										</td>
-										<td>5.585.178</td>
-										<td>4.41</td>
-									</tr>
+								<tbody id="elencoCanzoni">
+									<!-- Elenco canzoni -->
 								</tbody>
 							</table>
-							<!-- End elenco tabella canzoni -->
-						</div>
+						</section>
+						<!-- End elenco tabella canzoni -->
+
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- End main playlist -->
 
 			<!-- Sidebar destra Attività amici-->
@@ -323,7 +207,7 @@
 				</div>
 
 				<!-- Section Card user amici -->
-				<div class="card-img d-flex mt-5 mb-5">
+				<section class="card-img d-flex mt-5 mb-5">
 					<div class="me-1">
 						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
 					</div>
@@ -335,9 +219,9 @@
 					<div class="me-5">
 						<h5 class="text-white fs-6">4 ore</h5>
 					</div>
-				</div>
+				</section>
 
-				<div class="card-img d-flex mb-5">
+				<section class="card-img d-flex mb-5">
 					<div class="me-1">
 						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
 					</div>
@@ -350,9 +234,9 @@
 					<div>
 						<h5 class="text-white fs-6">4 ore</h5>
 					</div>
-				</div>
+				</section>
 
-				<div class="card-img d-flex mb-5">
+				<section class="card-img d-flex mb-5">
 					<div class="me-1">
 						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
 					</div>
@@ -364,14 +248,14 @@
 					<div>
 						<h5 class="text-white fs-6">4 ore</h5>
 					</div>
-				</div>
+				</section>
 			</div>
 			<!-- End Section card user amici -->
-		</div>
+		</section>
 		<!-- End Sidebar destra attività amici-->
 
 
-		<div class="row colore-secondario fixed-bottom">
+		<footer class="row colore-secondario fixed-bottom">
 			<!-- Album selezionato per la riproduzione -->
 			<div class="col-lg-2 d-flex justify-content-between align-items-center p-4">
 
@@ -450,8 +334,8 @@
 				</div>
 				<!-- End comandi di riproduzione -->
 			</div>
-		</div>
-	</div>
+		</footer>
+	</main>
 		<!-- End contenuto principale -->
 
 		<!-- Javascript Bootstrap -->

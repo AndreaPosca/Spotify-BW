@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     visualizzaTitolo(album);
     listaCanzoniAlbum(album);
-    previewBranoMP3();
+    
   });
 });
 
@@ -110,6 +110,7 @@ function listaCanzoniAlbum(album) {
       const viewAlbumRiproduzione = document.getElementById("viewAlbumRiproduzione");
       const sfBiHeart = document.getElementById("sf-bi-heart");
       
+      
       titoloRiproduzione.textContent = `${canzone.title}`;
       titoloRiproduzioneAlbum.textContent = `${canzone.album.title}`;
       
@@ -127,27 +128,51 @@ function listaCanzoniAlbum(album) {
  * Funzione di lettura brano musicale mp3 selezionato dalla lista delle canzoni
 */
 let audio = new Audio();
-let isPlaying = false;
+let isPlay = false;
+const progressBar = document.getElementById("progress-bar");
 
 function togglePlayPause() {
 
+  const playPrimario = document.getElementById("play-primario");
   const controlPlay = document.getElementById("sf-btn-control-play");
-  if (!isPlaying) {
+  if (!isPlay) {
     const mp3 = document.getElementById("brano").textContent;
     // Imposta il percorso del file MP3
     audio.src = mp3;
     // Avvia la riproduzione del file MP3
     audio.play();
     // Cambia il testo del bottone in "Pausa"
+    playPrimario.innerHTML = `<i class="bi bi-pause fs-4 text-white"></i>`;
     controlPlay.innerHTML = `<i class="bi bi-pause"></i>`;
     // document.querySelector('button').innerText = 'Pausa';
-    isPlaying = true;
-
+    isPlay = true;
+    // Aggiorna la progress bar mentre la canzone viene riprodotta
+    audio.addEventListener("timeupdate", updateProgressBar);
+    // Aggiungi un ascoltatore per l'evento "ended" per ripristinare il pulsante a "Play" quando la canzone è terminata
+    audio.addEventListener("ended", function() {
+      playPrimario.innerHTML = `<i class="bi bi-play fs-4 text-white"></i>`;
+      controlPlay.innerHTML = `<i class="bi bi-play"></i>`;
+      isPlay = false;
+      // Rimuovi l'ascoltatore per l'aggiornamento della progress bar quando la canzone è terminata
+      audio.removeEventListener("timeupdate", updateProgressBar);
+      // Resetta la progress bar
+      progressBar.style.width = "0%";
+    });
   } else {
     // Interrompi la riproduzione del file MP3
     audio.pause();
     // Cambia il testo del bottone in "Play"
+    playPrimario.innerHTML = `<i class="bi bi-play fs-4 text-white"></i>`;
     controlPlay.innerHTML = `<i class="bi bi-play"></i>`;
-    isPlaying = false;
+    isPlay = false;
+    
   }
+};
+
+
+function updateProgressBar() {
+  // Calcola la percentuale di avanzamento della canzone
+  let progress = (audio.currentTime / audio.duration) * 100;
+  // Aggiorna la larghezza della progress bar
+  progressBar.style.width = progress + "%";
 };

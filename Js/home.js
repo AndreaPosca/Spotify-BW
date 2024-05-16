@@ -37,6 +37,11 @@ const creaCard = async (elements) => {
     })
 }
 
+//funzione che fa la fetch, fa la ricerca per il nome dell'artista e trova gli album, traforma la risposta del server in json
+//poi definisco un lunghezza dell'array poichè voglio definite card e non oltre
+//creo un array vuoto (in cui inserri le informazioni per le card)
+//recupero i dati corrispondenzi alla mia ricerca
+//inoltre mi assicuro di non recuperare album uguali
 const fetchHome = async(artist, divAlbum) => {
     
     let url = `https://striveschool-api.herokuapp.com/api/deezer/search?q=${artist}`;
@@ -47,11 +52,17 @@ const fetchHome = async(artist, divAlbum) => {
             const quantitàCard = 5;
             const datiCard = [];
             console.log(musica);
+            //per ogni elemento legato alla ricerca
             musica.data.forEach((elemento) => {
                 console.log(elemento.album.title)
+                //se la lunghezza dell'array che contiene le informazioni è minore 5
+                //allora aggiungi altro se verifica una seconda condizione
                 if(datiCard.length < quantitàCard) {
+                    //Seconda condizione: se almeno un elemento dell'array ha lo stesso id dell'elemento
+                    //che stiamo iterando si passa al prossimo elemento, altrimenti viene aggiunto all'array
                     if (!datiCard.some(album => album.id === elemento.album.id)) {
                        datiCard.push(elemento.album);
+                       //console di controllo per verificare che sia andato tutto a buon fine
                     console.log([...datiCard]) 
                     }
                 }

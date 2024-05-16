@@ -131,6 +131,7 @@ let audio = new Audio();
 let isPlay = false;
 const progressBar = document.getElementById("progress-bar");
 
+//funzioni utili alla barra di riproduzione
 function togglePlayPause() {
 
   const playPrimario = document.getElementById("play-primario");
@@ -168,11 +169,12 @@ function togglePlayPause() {
     
   }
 };
-
-
 function updateProgressBar() {
   // Calcola la percentuale di avanzamento della canzone
   let progress = (audio.currentTime / audio.duration) * 100;
   // Aggiorna la larghezza della progress bar
   progressBar.style.width = progress + "%";
 };
+
+
+

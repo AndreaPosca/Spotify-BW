@@ -174,7 +174,7 @@
 						<!-- End Section comandi principali hero play -->
 
 						<!-- Elenco tabella canzoni -->
-						<section id="listaCanzoni">
+						<section class="contenuto-canzoni" id="listaCanzoni">
 							<table class="table table-responsive" id="table-hover">
 								<thead>
 									<tr>
@@ -257,24 +257,27 @@
 
 		<footer class="row colore-secondario fixed-bottom">
 			<!-- Album selezionato per la riproduzione -->
-			<div class="col-lg-2 d-flex justify-content-between align-items-center p-4">
+			<div class="col-lg-2 d-flex justify-content-between align-items-center p-4 footerRiproduzione">
 
-				<div class="card border-0 bg-transparent">
+				<div class="card border-0 bg-transparent" id="CanzoneInProduzione">
+					
 					<div class="row justify-content-lg-between align-items-center g-0">
-						<div class="col-lg-3">
-							<img src="https://picsum.photos/60/60" class="img-fluid" alt="...">
+						<div class="col-lg-3" id="viewAlbumRiproduzione">
+							<!-- Inserisce l'immagine dell'album in ascolto al click della selezione della canzone -->
 						</div>
 						<div class="col-lg-8">
 							<div class="card-body">
-								<h6 class="card-title text-white">Fat Funny Friend</h6>
-								<p class="card-text text-white">Maddie Zahm</p>
+								<h6 class="card-title text-white" id="titoloRiproduzione"></h6>
+								<p class="card-text text-white" id="titoloRiproduzioneAlbum"></p>
+								<p class="d-none" id="brano"></p>
 							</div>
 						</div>
 						<div class="col-lg-1 g-0">
-							<i class="bi bi-heart text-white"></i>
+							<i class="bi bi-heart text-white d-none" id="sf-bi-heart"></i>
 						</div>
 					</div>
 				</div>
+
 			</div>
 			<!-- End albun selezionato per la riproduzione -->
 
@@ -288,7 +291,7 @@
 					<button class="btn sf-btn-control">
 						<i class="bi bi-skip-start-fill"></i>
 					</button>
-					<button class="btn rounded-circle sf-btn-control-play">
+					<button class="btn rounded-circle sf-btn-control-play" onclick="togglePlayPause()" id="sf-btn-control-play">
 						<i class="bi bi-play"></i>
 					</button>
 					<button class="btn sf-btn-control">

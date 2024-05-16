@@ -60,7 +60,6 @@ body {
 }
 
 .freccia-sinistra:hover {
-  
   cursor: pointer;
   opacity: 0.5;
 }
@@ -68,6 +67,11 @@ body {
 .freccia-destra:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.color-content {
+  background: rgb(126,113,63);
+  background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
 }
 
 .content-hero {
@@ -97,9 +101,23 @@ body {
 /* End menù utente */
 
 .contenuto-lista {
-  height: 100px;
+  /* height: 100%; */
   margin-top: 50px;
   padding: 10px;
+}
+
+.contenuto-canzoni {
+  height: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.link-title:hover {
+  cursor: pointer;
+}
+
+#titoloRiproduzione {
+  font-size: 0.8rem;
 }
 
 .sf-btn-primario {
@@ -117,7 +135,6 @@ body {
   color: #fff;
 }
 
-
 .sf-list-group-item {
   background-color: #121212;
   color: #fff;  
@@ -130,6 +147,10 @@ body {
 
 #picturArtist {
   width: 40px;
+}
+
+.footerRiproduzione {
+  display: none;
 }
 
 
@@ -190,11 +211,6 @@ body {
   .sidebar-destra {
     display: block;
     
-  }
-
-  .color-content {
-    background: rgb(126,113,63);
-    background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
   }
 
   #table-hover th,
@@ -286,6 +302,15 @@ body {
 
   .button-arrows {
     margin-left: 110px;
+  }
+
+  .footerRiproduzione {
+    height: 150px;
+    display: block;
+  }
+
+  #imageRiproduzione {
+    width: 100px;
   }
 
 }

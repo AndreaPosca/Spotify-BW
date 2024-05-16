@@ -35,7 +35,7 @@
 			<!-- Sidebar sinistra -->
 			<aside class="col-lg-2 colore-primario sidebar-sinistra">
 				<!-- Menu sidebar sinistra -->
-				<ul class="list-group">
+				<div class="list-group">
 					<li class="list-group-item sf-list-group-item border-0">
 						<img src="./assets/Spotify-logo.png" style="width: 100px" alt="Logo Agiendale Spotify">
 						<div class="btn-group">
@@ -51,32 +51,32 @@
 							</ul>
 						</div>
 					</li>
-					<li class="list-group-item sf-list-group-item border-0">
+					<a href ="./index.html" class="list-group-item sf-list-group-item border-0">
 						<button class="btn btn-outline-light border-0"><i class="bi bi-house"></i></button>
 						<span class="menu-sidebar-sx">Home</span>
-					</li>
-					<li class="list-group-item sf-list-group-item border-0">
+					</a>
+					<a class="list-group-item sf-list-group-item border-0">
 						<button class="btn btn-outline-light border-0"><i class="bi bi-search"></i></button>
 						<span class="menu-sidebar-sx">Cerca</span>
-					</li>
-					<li class="list-group-item sf-list-group-item border-0">
+					</a>
+					<a class="list-group-item sf-list-group-item border-0">
 						<button class="btn btn-outline-light border-0"><i class="bi bi-book"></i></button>
 						<span class="menu-sidebar-sx">La tua libreria</span>
-					</li>
-					<li class="list-group-item sf-list-group-item border-0">
+					</a>
+					<a class="list-group-item sf-list-group-item border-0">
 						<button class="btn bg-body-tertiary border-0 button-plus"><i class="bi bi-plus-lg"></i></button>
 						<span class="menu-sidebar-sx">Crea playlist</span>
-					</li>
-					<li class="list-group-item sf-list-group-item border-0">
+					</a>
+					<a class="list-group-item sf-list-group-item border-0">
 						<button class="btn bg-body-tertiary border-0 button-brani"><i
 								class="bi bi-heart-fill text-white"></i></button>
 						<span class="menu-sidebar-sx">Brani che ti piacciono</span>
-					</li>
-					<li class="list-group-item sf-list-group-item border-0">
+					</a>
+					<a class="list-group-item sf-list-group-item border-0">
 						<button class="btn bg-body-tertiary border-0 button-episodi"><i class="bi bi-bookmark-fill"></i></button>
 						<span class="menu-sidebar-sx">I tuoi episodi</span>
-					</li>
-				</ul>
+					</a>
+				</div>
 				<!-- End menu sidebar sinistra -->
 				<hr class="divider linea">
 				<ul class="list-group lista-libreria">
@@ -109,8 +109,8 @@
 				<div class="row d-flex justify-content-center align-items-center menu-nav">
 					<!-- Section freccie indietro e avanti -->
 					<div class="col-2 p-0">
-						<a class="btn fs-3"><i class="bi bi-arrow-left-circle-fill freccia-sinistra"></i></a>
-						<a class="btn fs-3"><i class="bi bi-arrow-right-circle-fill freccia-destra"></i></a>
+						<a href="./index.html" class="btn fs-3"><i class="bi bi-arrow-left-circle-fill freccia-sinistra"></i></a>
+						<a href="#" class="btn fs-3"><i class="bi bi-arrow-right-circle-fill freccia-destra"></i></a>
 					</div>
 					<!-- End Section freccia indietro e avanti -->
 
@@ -144,7 +144,7 @@
 					<div class="col-12 color-content">
 						<!-- Section comandi principali hero play -->
 						<div class="d-flex align-items-center contenuto-lista">
-							<button class="btn rounded-circle me-5 sf-btn-primario">
+							<button class="btn rounded-circle me-5 sf-btn-primario" onclick="togglePlayPause()" id="play-primario">
 								<i class="bi bi-play-fill fs-4 text-white"></i>
 							</button>
 							<span class="me-5"><i class="bi bi-heart fs-4 text-white"></i></span>
@@ -305,7 +305,7 @@
 
 					<!-- Barra progress musica -->
 					<div class="progress sf-progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+						<div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 					<!-- End barra progress musica -->
 				</div>
@@ -316,9 +316,8 @@
 				<span class="burron-speaker"><i class="bi bi-speaker text-white fs-5 me-2"></i></span>
 				<span class="buttton-volume"><i class="bi bi-volume-up text-white fs-5 me-2"></i></span>
 				<span class="button-arrows"><i class="bi bi-arrows-angle-expand text-white fs-5 me-2"></i></span>
-				<div class="progress sf-progress-2" role="progressbar" aria-label="Basic example" aria-valuenow="0"
-					aria-valuemin="0" aria-valuemax="100">
-					<div class="progress-bar" style="width: 25%"></div>
+				<div class="progress sf-progress-2">
+					<div id="progress-bar-volume" class="progress-bar-volume" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 				</div>
 
 				<!-- End barra di riproduzione -->

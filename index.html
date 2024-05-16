@@ -28,11 +28,12 @@
 
 <body>
 	<!-- Contenuto principale -->
-	<div class="container-fluid">
+	<main class="container-fluid">
 
 		<!-- Sidebar sinistra -->
-		<div class="row">
+		<aside class="row">
 			<div class="col-lg-2 colore-primario sidebar-sinistra">
+
 				<!-- Menu sidebar sinistra -->
 				<ul class="list-group">
 					<li class="list-group-item sf-list-group-item border-0">
@@ -100,162 +101,405 @@
 					<li class="list-group-item sf-list-group-item border-0">Francesco Guccini Mix</li>
 				</ul>
 			</div>
+		</aside>
 			<!-- End sidebar sinistra -->
 
-			<!-- Contenuto main playlist -->
-			<div class="container col-12 col-lg-8 sf-playlist">
+		<!-- Contenuto main playlist -->
+		<section class="container col-12 col-lg-8 sf-playlist">
+			<div class="row d-flex justify-content-center align-items-center menu-nav">
 
-				<div class="row d-flex justify-content-center align-items-center menu-nav">
-					<!-- Section freccie indietro e avanti -->
-					<div class="col-2 p-0">
-						<a class="btn fs-3"><i class="bi bi-arrow-left-circle-fill freccia-sinistra"></i></a>
-						<a class="btn fs-3"><i class="bi bi-arrow-right-circle-fill freccia-destra"></i></a>
+				<!-- Section freccie indietro e avanti -->
+				<div class="col-2 p-0">
+					<a class="btn fs-3"><i class="bi bi-arrow-left-circle-fill freccia-sinistra"></i></a>
+					<a class="btn fs-3"><i class="bi bi-arrow-right-circle-fill freccia-destra"></i></a>
+				</div>
+				<!-- End Section freccia indietro e avanti -->
+
+				<!-- Section menu user -->
+				<div class="col-10 justify-content-end mt-3">
+					<div class="dropdown float-end sf-dropdown">
+						<button class="btn dropdown-toggle text-white p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="https://picsum.photos/30" class="img-fluid rounded-circle"> Lidia Nautilus ...
+						</button>
+						<ul class="dropdown-menu sf-dropdown-menu">
+							<li><a class="dropdown-item sf-dropdown-item" href="#">Account</a></li>
+							<li><a class="dropdown-item sf-dropdown-item" href="#">Profilo</a></li>
+							<li><a class="dropdown-item sf-dropdown-item" href="#">Effettua l'upgrade a Premium</a></li>
+							<li><a class="dropdown-item sf-dropdown-item" href="#">Sessione privata</a></li>
+							<li><a class="dropdown-item sf-dropdown-item" href="#">Impostazioni</a></li>
+							<li><a class="dropdown-item sf-dropdown-item" href="#">Esci</a></li>
+						</ul>
 					</div>
-					<!-- End Section freccia indietro e avanti -->
+				</div>
+				<!-- End Section menu user -->
+			</div>
 
-					<!-- Section menu user -->
-					<div class="col-10 justify-content-end mt-3">
-						<div class="dropdown float-end sf-dropdown">
-							<button class="btn dropdown-toggle text-white p-2" type="button" data-bs-toggle="dropdown"
-								aria-expanded="false">
-								<img src="https://picsum.photos/30" class="img-fluid rounded-circle"> Lidia Nautilus ...
+			<!-- Section Hero -->
+			<div class="row content-hero">
+				<div class="col-2">
+					<img src="https://picsum.photos/400/" class="img-fluid mt-3">
+				</div>
+				<div class="col-10 mt-5">
+					<span class="text-white">ALBUM</span>
+					<h1 class="title">VIOLA (feat. Salmo)</h1>
+					<div class="d-flex justify-content-start align-items-center mt-3">
+						<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image album">
+						<p class="text-white m-0">Fedez, Salmo</p>
+						<p class="text-white m-0">Ascolta il nuovo singolo di Fedez e Salmo!</p>
+					</div>
+				</div>
+			</div>
+			<!-- Section Hero -->
+
+			<div class="row">
+				<div class="col-12 color-content">
+					<!-- Section comandi principali hero play -->
+					<div class="d-flex align-items-center contenuto-lista">
+						<button class="btn rounded-circle me-5 sf-btn-primario">
+							<i class="bi bi-play-fill fs-4 text-white"></i>
+						</button>
+						<span class="me-5"><i class="bi bi-heart fs-4 text-white"></i></span>
+						<div class="btn-group">
+							<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-three-dots fs-4 text-white"></i>
 							</button>
 							<ul class="dropdown-menu sf-dropdown-menu">
-								<li><a class="dropdown-item sf-dropdown-item" href="#">Account</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#">Profilo</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#">Effettua l'upgrade a Premium</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#">Sessione privata</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#">Impostazioni</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#">Esci</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Aggiungi a La tua libreria</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-journal-plus"></i> Aggiungi in coda</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-exclamation-octagon"></i>Segnala</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-download"></i> Scarica</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Escludi dal profilo relativo ai gusti</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-folder"></i> Aggiungi cartella</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-lg"></i> Aggiungi un'altra playlist</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-box-arrow-up"></i>Condividi</a></li>
 							</ul>
 						</div>
 					</div>
-					<!-- End Section menu user -->
-				</div>
+					<!-- End Section comandi principali hero play -->
 
-				<!-- Section Hero -->
-				<div class="row content-hero">
-					<div class="col-2">
-						<img src="https://picsum.photos/400/" class="img-fluid mt-3">
-					</div>
-					<div class="col-10 mt-5">
-						<span class="text-white">ALBUM</span>
-						<h1 class="title">VIOLA (feat. Salmo)</h1>
-						<div class="d-flex justify-content-start align-items-center mt-3">
-							<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image album">
-							<p class="text-white m-0">Fedez, Salmo</p>
-							<p class="text-white m-0">Ascolta il nuovo singolo di Fedez e Salmo!</p>
-						</div>
-					</div>
-				</div>
-				<!-- Section Hero -->
+					<div>
+							
+						<!-- START MAIN -->
+						<div class="container main-head">
+							<h2>Buonasera</h2>
 
-				<div class="row">
-					<div class="col-12 color-content">
-						<!-- Section comandi principali hero play -->
-						<div class="d-flex align-items-center contenuto-lista">
-							<button class="btn rounded-circle me-5 sf-btn-primario">
-								<i class="bi bi-play-fill fs-4 text-white"></i>
-							</button>
-							<span class="me-5"><i class="bi bi-heart fs-4 text-white"></i></span>
-							<div class="btn-group">
-								<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
-									<i class="bi bi-three-dots fs-4 text-white"></i>
-								</button>
-								<ul class="dropdown-menu sf-dropdown-menu">
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Aggiungi a La
-											tua libreria</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-journal-plus"></i> Aggiungi in
-											coda</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-exclamation-octagon"></i>
-											Segnala</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-download"></i> Scarica</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Escludi dal
-											profilo relativo ai gusti</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-folder"></i> Aggiungi
-											cartella</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-lg"></i> Aggiungi un'altra
-											playlist</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-box-arrow-up"></i>
-											Condividi</a></li>
-								</ul>
+							<!-- START
+							HEAD SECTION (RETTANGOLI) -->
+							<div class="row">
+								<div class="col-6">
+									<div>
+										<img src="https://picsum.photos/50" alt="">
+										<div class="body">
+											<h3>roba</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div>
+										<img src="https://picsum.photos/50" alt="">
+										<div class="body">
+											<h3>roba</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div>
+										<img src="https://picsum.photos/50" alt="">
+										<div class="body">
+											<h3>roba</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div>
+										<img src="https://picsum.photos/50" alt="">
+										<div class="body">
+											<h3>roba</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div>
+										<img src="https://picsum.photos/50" alt="">
+										<div class="body">
+											<h3>roba</h3>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div>
+										<img src="https://picsum.photos/50" alt="">
+										<div class="body">
+											<h3>roba</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END
+							HEAD SECTION (RETTANGOLI) -->
+
+							<!-- START
+							BODY SECTION (QUADRATI) -->
+							<h2>I più ascoltati</h2>
+							<div class="row">
+								<h4 class="col-12">Taylor Swift</h4>
+								<div class="col-12">
+									<div class="row">
+										<img src="" alt="" id="album-taylor1">
+									</div>
+									<div class="row">
+										<img src="" alt="" id="album-taylor2">
+									</div>
+									<div class="row">
+										<img src="" alt="" id="album-taylor3">
+									</div>
+									<div class="row">
+										<img src="" alt="" id="album-taylor4">
+									</div>
+									<div class="row">
+										<img src="" alt="" id="album-taylor5">
+									</div>
+								</div>
 							</div>
 						</div>
-						<!-- End Section comandi principali hero play -->
+							
+						<!-- START 
+						Contenitore delle card "Generi" -->
+						<div class="contenuto card container d-none" id="card-container">
+								
+							<div class="row">
 
-						<div>
-							<h1>inserire card per le canzoni</h1>
+								<!-- SEZIONE POP -->
+								<div class="col-6">
+									<div id="pop">
+										<h2>POP</h2>
+										<div id="click-pop" class="d-none">
+											<div class="card" id="artist">
+												<h4>Tailor Swift</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>The Weeknd</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Bruno Mars</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Justin Bieber</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Dua Lipa</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Rihanna</h4>
+											</div>
+										</div>
+									</div>
+								</div>
 
-							<!-- Elenco card canzoni -->
-							<div id="contenutoCard">
+									<!-- SEZIONE ROCK -->
+								<div class="col-6">
+									<div id="rock">
+										<h2>Rock</h2>
+										<div id="click-rock" class="d-none">
+											<div class="card" id="artist">
+												<h4>Queen</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Pink Floyd</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Guns n' Roses</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>AC/DC</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Metallica</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Nirvana</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- SEZIONE RAP -->
+								<div class="col-6">
+									<div id="rap">
+										<h2>Rap</h2>
+										<div id="click-rap" class="d-none">
+											<div class="card" id="artist">
+												<h4>Dr. Dre</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Ludacris</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>50 Cent</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Kanye West</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Nicki Minaj</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Snoop Dog</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- SEZIONE ELETTRONICA -->
+								<div class="col-6">
+									<div id="elettronica">
+										<h2>Elettronica</h2>
+										<div id="click-elettronica" class="d-none">
+											<div class="card" id="artist">
+												<h4>Daft Punk</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Twenty One Pilots</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Depeche Mode</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Calvin Harris</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>The Chainsmokers</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>The Prodigy</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- SEZIONE METAL -->
+								<div class="col-6">
+									<div id="metal">
+										<h2>Metal</h2>
+										<div id="click-metal" class="d-none">
+											<div class="card" id="artist">
+												<h4>Black Sabbath</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Judas Priest</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Motorhead</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Iron Maiden</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Pantera</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Ozzy Osbourne</h4>
+											</div>
+										</div>
+									</div>
+								</div>	
+
+								<!-- SEZIONE REGGAETON -->
+								<div class="col-6">
+									<div id="reggaeton">
+										<h2>Metal</h2>
+										<div id="click-reggaeton" class="d-none">
+											<div class="card" id="artist">
+												<h4>Bad Bunny</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Karol G</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>El Alfa</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Farruko</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Daddy Yankee</h4>
+											</div>
+											<div class="card" id="artist">
+												<h4>Ozuna</h4>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<!-- End elenco tabella canzoni -->
 						</div>
+						<!-- END
+						Contenitore generi -->
+							
 					</div>
 				</div>
 			</div>
-			<!-- End main playlist -->
+		</section>
+		<!-- End main playlist -->
 
-			<!-- Sidebar destra Attività amici-->
-			<div class="col-lg-2 colore-primario sidebar-destra">
-				<div class="d-flex justify-content-between align-content-center mt-4">
-					<h5 class="title fs-5 mt-1">Attività amici</h5>
-					<div>
-						<i class="bi bi-person-add text-white me-2 fs-5"></i>
-						<i class="bi bi-x-lg text-white me-2 fs-5"></i>
-					</div>
-				</div>
-
-				<!-- Section Card user amici -->
-				<div class="card-img d-flex mt-5 mb-5">
-					<div class="me-1">
-						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
-					</div>
-					<div>
-						<h5 class="card-title text-white fs-6 me-4">Charlie Hookham</h5>
-						<p class="card-text"><small class="text-white">In Camera • Yumi Zouma</small></p>
-						<p class="card-text"><small class="text-white"><i class="bi bi-record-circle"></i> EP III</small></p>
-					</div>
-					<div class="me-5">
-						<h5 class="text-white fs-6">4 ore</h5>
-					</div>
-				</div>
-
-				<div class="card-img d-flex mb-5">
-					<div class="me-1">
-						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
-					</div>
-
-					<div>
-						<h5 class="card-title text-white fs-6 me-4">lightdark02</h5>
-						<p class="card-text text-white">Aimed to Kill • Jade LeMac</p>
-						<p class="card-text text-white"><i class="bi bi-record-circle"></i> Aimed to Kill</p>
-					</div>
-					<div>
-						<h5 class="text-white fs-6">4 ore</h5>
-					</div>
-				</div>
-
-				<div class="card-img d-flex mb-5">
-					<div class="me-1">
-						<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
-					</div>
-					<div>
-						<h5 class="card-title text-white fs-6 me-4">Valeria Traverso</h5>
-						<p class="card-text text-white">New Kings • Sleeping Wolf</p>
-						<p class="card-text text-white"><i class="bi bi-music-note-beamed"></i> Twint Badass mood</p>
-					</div>
-					<div>
-						<h5 class="text-white fs-6">4 ore</h5>
-					</div>
+		<!-- Sidebar destra Attività amici-->
+		<aside class="col-lg-2 colore-primario sidebar-destra">
+			<div class="d-flex justify-content-between align-content-center mt-4">
+				<h5 class="title fs-5 mt-1">Attività amici</h5>
+				<div>
+					<i class="bi bi-person-add text-white me-2 fs-5"></i>
+					<i class="bi bi-x-lg text-white me-2 fs-5"></i>
 				</div>
 			</div>
+
+			<!-- Section Card user amici -->
+			<div class="card-img d-flex mt-5 mb-5">
+				<div class="me-1">
+					<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+				</div>
+				<div>
+					<h5 class="card-title text-white fs-6 me-4">Charlie Hookham</h5>
+					<p class="card-text"><small class="text-white">In Camera • Yumi Zouma</small></p>
+					<p class="card-text"><small class="text-white"><i class="bi bi-record-circle"></i> EP III</small></p>
+				</div>
+				<div class="me-5">
+					<h5 class="text-white fs-6">4 ore</h5>
+				</div>
+			</div>
+
+			<div class="card-img d-flex mb-5">
+				<div class="me-1">
+					<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+				</div>
+				<div>
+					<h5 class="card-title text-white fs-6 me-4">lightdark02</h5>
+					<p class="card-text text-white">Aimed to Kill • Jade LeMac</p>
+					<p class="card-text text-white"><i class="bi bi-record-circle"></i> Aimed to Kill</p>
+				</div>
+				<div>
+					<h5 class="text-white fs-6">4 ore</h5>
+				</div>
+			</div>
+
+			<div class="card-img d-flex mb-5">
+				<div class="me-1">
+					<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+				</div>
+				<div>
+					<h5 class="card-title text-white fs-6 me-4">Valeria Traverso</h5>
+					<p class="card-text text-white">New Kings • Sleeping Wolf</p>
+					<p class="card-text text-white"><i class="bi bi-music-note-beamed"></i> Twint Badass mood</p>
+				</div>
+				<div>
+					<h5 class="text-white fs-6">4 ore</h5>
+				</div>
+			</div>
+		</aside>
 			<!-- End Section card user amici -->
 		</div>
 		<!-- End Sidebar destra attività amici-->
 
 
-		<div class="row colore-secondario fixed-bottom">
+		<section class="row colore-secondario fixed-bottom">
 			<!-- Album selezionato per la riproduzione -->
 			<div class="col-lg-2 d-flex justify-content-between align-items-center p-4">
 
@@ -279,7 +523,7 @@
 			<!-- End albun selezionato per la riproduzione -->
 
 			<!-- Barra di riproduzione -->
-			<div class="col-lg-8">
+			<section class="col-lg-8">
 				<!-- Button di riproduzione -->
 				<div class="riproduzione">
 					<button class="btn sf-btn-control">
@@ -306,8 +550,8 @@
 					</div>
 					<!-- End barra progress musica -->
 				</div>
-			</div>
-			<div class="col-lg-2 mt-5">
+			</section>
+			<section class="col-lg-2 mt-5">
 				<span class="button-mic"><i class="bi bi-mic text-white fs-5 me-2"></i></span>
 				<span class="button-list"><i class="bi bi-view-list text-white fs-5 me-2"></i></span>
 				<span class="burron-speaker"><i class="bi bi-speaker text-white fs-5 me-2"></i></span>
@@ -333,9 +577,9 @@
 					</button>
 				</div>
 				<!-- End comandi di riproduzione -->
-			</div>
-		</div>
-	</div>
+			</section>
+		</section>
+	</main>
 		<!-- End contenuto principale -->
 
 		<!-- Javascript Bootstrap -->

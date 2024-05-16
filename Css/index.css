@@ -298,3 +298,41 @@ body {
 }
 
   /* Qui finisce lo stile comune a tutte le pagine */
+
+  #pop, #rock, #rap, #elettronica, #metal, #reggaeton {
+    border-radius: 20px;
+    background-color: #00c358;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenuto.card.container .row {
+    gap:25px 0;
+    margin-bottom: 170px;
+  }
+
+  .main-head h2 {
+    color: white;
+  }
+
+  .main-head .row {
+    gap: 20px 0;
+  }
+
+  
+  .main-head .row .body {
+    background-color: grey;
+
+  }
+
+  .main-head .row .col-6 div {
+    display: flex;
+    width: 100%;
+  }
+
+  .body h3 {
+    margin-left: 10px;
+    color: white;
+  }

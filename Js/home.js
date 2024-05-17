@@ -105,7 +105,8 @@ const fetchHome = async(artist, divAlbum) => {
 cerca.addEventListener("click", function () {
     inputCerca.classList.toggle("d-none");
     cardsContainer.classList.add("d-none");
-    genresContainer.classList.remove('d-none')
+    genresContainer.classList.remove('d-none');
+    containerMain.innerContent = 0;
 });
 
 

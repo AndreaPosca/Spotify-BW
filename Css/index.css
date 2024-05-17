@@ -433,11 +433,11 @@ body {
 
   }
 
-  #taylor .row, #metallica .row, #eminem .row, #nuovocontainer .row {
+  #taylor .row, #metallica .row, #eminem .row, #nuovocontainer {
     gap: 15px;
   }
 
-  #taylor .row .card, #metallica .row .card, #eminem .row .card, #nuovocontainer .row .card {
+  #taylor .row .card, #metallica .row .card, #eminem .row .card, #nuovocontainer .card {
     background-color: #333333;
     display: flex;
     flex-direction: column;

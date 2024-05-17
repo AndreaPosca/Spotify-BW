@@ -72,7 +72,7 @@ const fetchHome = async(artist, divAlbum) => {
             })
             datiCard.forEach(album => {
                 const col =document.createElement('div');
-                col.classList.add('col', 'card');
+                col.classList.add('col', 'card', 'display-card');
                 divAlbum.appendChild(col)
 
                 const img = document.createElement('img');
@@ -92,11 +92,18 @@ const fetchHome = async(artist, divAlbum) => {
                 const text = document.createElement('p');
                 text.classList.add('card-text');
                 body.appendChild(text)
-                text.innerText = album.title
+                text.innerText = album.title;
+
+                col.addEventListener('click', function () {
+                    paginaSpecifica(album.id)
+                })
             })
         })
 }
 
+function paginaSpecifica(id) {
+    window.location.href = './almbum.html?id=' + id;
+}
 
 /**
  * Funzione cerca con attivazione della casella input nel document html
@@ -105,7 +112,11 @@ const fetchHome = async(artist, divAlbum) => {
 cerca.addEventListener("click", function () {
     inputCerca.classList.toggle("d-none");
     cardsContainer.classList.add("d-none");
-    genresContainer.classList.remove('d-none')
+    genresContainer.classList.remove('d-none');
+    const displayCards = document.querySelectorAll('.display-card');
+    displayCards.forEach(card => card.classList.add('d-none'));
+    const displayCTitles = document.querySelectorAll('titleCArdGeneri');
+    displayCTitles.forEach(card => card.classList.add('d-none'));
 });
 
 
@@ -154,7 +165,7 @@ function display (name) {
         const cardContainer = document.createElement('div');
         const title = document.createElement('h4')
         title.innerText = artistName;
-        title.classList.add('col-12')
+        title.classList.add('col-12', 'titleCArdGeneri')
         cardContainer.id = "nuovocontainer";
         cardContainer.classList.add('row', 'g-3');
 

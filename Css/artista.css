@@ -165,6 +165,34 @@ body {
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(105,99,99,1) 49%, rgba(0,0,0,1) 100%);
 }
 
+.footbar-mobile {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.icons-house,
+.icons-search,
+.icons-book {
+  font-size: 2.0rem;
+}
+
+.icons-house:hover,
+.icons-search:hover,
+.icons-book:hover {
+  color:#00c358;
+}
+
+
+.footbar-desktop,
+.footerRiproduzione,
+.sf-progress,
+.comandi-volume,
+.riproduzione {
+  display: none;
+}
+
 
 /* View Desktop */
 @media (min-width: 1439px) {
@@ -333,6 +361,32 @@ body {
 
   .button-arrows {
     margin-left: 110px;
+  }
+  .footerRiproduzione {
+    /* height: 150px; */
+    display: block;
+  }
+
+  #imageRiproduzione {
+    width: 100px;
+  }
+
+  .footbar-desktop {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+
+  .footerRiproduzione,
+  .sf-progress,
+  .comandi-volume,
+  .riproduzione {
+    display: block;
   }
 
 }

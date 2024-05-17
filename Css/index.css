@@ -45,6 +45,8 @@ body {
 /* Contenuto main */
 .sf-playlist {
   background-color: #121212;
+  height: 100%; 
+  overflow-y: scroll;
 }
 
 /* Menù utente */
@@ -54,22 +56,13 @@ body {
   border-radius: 25px;
 }
 
-.menu-nav {
-  height: 100px;
-}
 
 .freccia-sinistra,
 .freccia-destra {
   font-size: 1.8rem;
-  color: white;
-  background-color: #000;
-  font-size: 20px;
-  padding: 1px 3px 1px 4px;
-
 }
 
 .freccia-sinistra:hover {
-  
   cursor: pointer;
   opacity: 0.5;
 }
@@ -79,10 +72,6 @@ body {
   opacity: 0.5;
 }
 
-.content-hero {
-  background: linear-gradient(15deg, rgba(0,0,0,1) 35%, rgba(47,47,47,1) 100%);
-  ;
-}
 
 /* .sf-dropdown:hover {
   color: #fff;
@@ -106,14 +95,37 @@ body {
 /* End menù utente */
 
 .contenuto-lista {
-  height: 100px;
+  /* height: 100%; */
+  margin-top: 50px;
   padding: 10px;
+}
+
+.contenuto-canzoni {
+  height: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.link-title:hover {
+  cursor: pointer;
+}
+
+#titoloRiproduzione {
+  font-size: 0.8rem;
 }
 
 .sf-btn-primario {
   background-color: #00c358;
-  font-size: 15px;
-  font-weight: 700;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+#heart-favoriti:hover {
+  cursor: pointer;
+}
+
+#picturArtist:hover {
+  cursor: pointer;
 }
 
 /* .sf-btn-primario:hover {
@@ -125,7 +137,6 @@ body {
   color: #fff;
 }
 
-
 .sf-list-group-item {
   background-color: #121212;
   color: #fff;  
@@ -135,6 +146,24 @@ body {
   background-color: #272727;
   color: #fff;  
 } */
+
+#picturArtist {
+  width: 40px;
+}
+
+.footerRiproduzione {
+  display: none;
+}
+
+.link-artista {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-artista:hover {
+  cursor: pointer;
+  color: #00c358;
+}
 
 
 /* View Desktop */
@@ -196,11 +225,6 @@ body {
     
   }
 
-  .color-content {
-    background: rgb(126,113,63);
-    background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
-  }
-
   #table-hover th,
   #table-hover td {
     background-color: transparent;
@@ -217,7 +241,6 @@ body {
 
   .sf-progress-2 {
     height: 0.2rem;
-    width: 100%;
     margin-top: -15px;
     margin-left: 140px;
     margin-right: 80px;
@@ -258,8 +281,6 @@ body {
 
   .title {
     color: #fff;
-    font-size: 50px;
-    font-weight: 700;
   }
 
   label {
@@ -283,19 +304,29 @@ body {
   }
 
   .riproduzione {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+    text-align: center; 
+    margin-top: 50px
   }
 
-  .riproduzione .progress {
-    margin:0;
+  .riproduzione-volume {
+    width: 100%;
+  }
+
+  .button-arrows {
+    margin-left: 110px;
+  }
+
+  .footerRiproduzione {
+    height: 150px;
+    display: block;
+  }
+
+  #imageRiproduzione {
+    width: 100px;
+  }
+
 }
 
-  
-
-}
 
   /* Qui finisce lo stile comune a tutte le pagine */
 

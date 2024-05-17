@@ -93,3 +93,19 @@ const fetchHome = async(artist, divAlbum) => {
 //DA CANCELLARE:
 // let name = document.querySelectorAll('.homeCards');
 // name.forEach(element => console.log(element.parentNode.innerHTML))
+
+
+/**
+ * Funzione cerca con attivazione della casella input nel document html
+*/
+const cerca = document.getElementById("cerca");
+const inputCerca = document.getElementById("inputCerca");
+
+cerca.addEventListener("click", () => {
+  if (inputCerca.classList.contains("d-none")) {
+    inputCerca.classList.remove("d-none");
+  } else {
+    inputCerca.classList.add("d-none");
+  }
+  
+});

@@ -399,7 +399,7 @@ body {
     color: white;
   }
 
-  #taylor .row img, #metallica .row img, #eminem .row img{
+  #taylor .row img, #metallica .row img, #eminem .row img, #nuovocontainer img{
     width:140px;
     margin-top: 5px;
     border-radius: 5px;
@@ -409,42 +409,40 @@ body {
     margin-bottom: 170px;
   }
 
-  #taylor, #metallica, #eminem {
+  #taylor, #metallica, #eminem, #nuovocontainer {
     margin-bottom: 20px;
   }
 
-  #taylor h6, #taylor p, #metallica h6, #metallica p, #eminem h6, #eminem p {
+  #taylor h6, #taylor p, #metallica h6, #metallica p, #eminem h6, #eminem p, #nuovocontainer p, #nuovocontainer h6 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  #taylor p, #metallica p, #eminem p {
+  #taylor p, #metallica p, #eminem p, #nuovocontainer p {
     font-size: 10px;
     color: rgb(155, 151, 151);
     font-weight: 600;
   }
 
-  #taylor h6, #metallica h6, #eminem h6 {
+  #taylor h6, #metallica h6, #eminem h6, #nuovocontainer h6 {
     font-size: 13px;
     font-weight: 800;
     margin: 5px 0;
+    color:white;
+
   }
 
-  #taylor .row, #metallica .row, #eminem .row {
+  #taylor .row, #metallica .row, #eminem .row, #nuovocontainer .row {
     gap: 15px;
   }
 
-  #taylor .row .card, #metallica .row .card, #eminem .row .card {
+  #taylor .row .card, #metallica .row .card, #eminem .row .card, #nuovocontainer .row .card {
     background-color: #333333;
     display: flex;
     flex-direction: column;
     justify-content: center;
   
-  }
-
-  #taylor .row .card h6, #metallica .row .card h6, #eminem .row .card h6 {
-    color:white;
   }
 
   .nascondi-annuncio {

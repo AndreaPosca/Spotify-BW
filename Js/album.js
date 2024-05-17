@@ -64,7 +64,9 @@ function visualizzaTitolo(album) {
 	    <h1 class="title">${album.title}</h1>
 	    <div class="d-flex justify-content-start align-items-center mt-3">
 	      <img src="${album.artist.picture}" class="rounded-circle me-2" alt="${album.artist.name}" id="picturArtist">
-	      <p class="text-white m-0">${album.artist.name} • ${album.release_date} • ${album.nb_tracks} brani, ${album.duration} min </p>
+	      <p class="text-white m-0">
+          <a class="link-artista" href="./artista.html?id=${album.artist.id}">${album.artist.name}</a> • ${album.release_date} • ${album.nb_tracks} brani, ${album.duration} min 
+        </p>
 	    </div>
 	  </div>
   ` 

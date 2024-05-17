@@ -153,6 +153,16 @@ body {
   display: none;
 }
 
+.link-artista {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-artista:hover {
+  cursor: pointer;
+  color: #00c358;
+}
+
 
 /* View Desktop */
 @media (min-width: 1439px) {

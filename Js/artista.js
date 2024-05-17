@@ -90,11 +90,11 @@ function dettagliArtista(artista) {
       <img src="${artista.picture}" class="img-fluid mt-3" alt="${artista.name}">
     </div>
     <div class="col-10 mt-5">
-      <span class="text-white">Artista verificato</span>
+      <span class="text-white fs-6"><i class="bi bi-patch-check text-primary"></i> Artista verificato</span>
       <h1 class="title">${artista.name}</h1>
       <div class="d-flex justify-content-start align-items-center mt-3">
         <img src="${artista.picture_small}" class="rounded-circle me-2" alt="${artista.name}">
-        <p class="text-white m-0">${artista.nb_fan} ascoltatori mensili</p>
+        <p class="text-white m-0 fs-6 fw-bold">${artista.nb_fan} ascoltatori mensili</p>
       </div>
     </div>
   `;
@@ -136,6 +136,10 @@ function viewCanzoni(canzoni) {
 
   let lista = 0;
   canzoni.data.forEach(canzone => {
+    // Converto il tempo in minuti e secondi
+    let tempo = (canzone.duration/60).toFixed(2).toString().split(".");
+    let minuti = tempo[0];
+    let secondi = tempo[1];
     //console.log(canzone.id);
     lista += 1;
     const content = document.createElement("tr");
@@ -151,7 +155,7 @@ function viewCanzoni(canzoni) {
             <p>${canzone.title}</p>
           </td>
           <td>${canzone.rank}</td>
-          <td>${canzone.duration}</td>
+          <td>${minuti} min ${secondi} sec</td>
       </tr>
     `
     elencoCanzoni.appendChild(content);

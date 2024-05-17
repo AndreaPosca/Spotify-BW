@@ -61,6 +61,12 @@ function visualizzaTitolo(album) {
   const visualizzaTitolo = document.getElementById("visualizzaTitolo");
   //console.log(visualizzaTitolo)
 
+  // Converto il tempo in minuti e secondi
+  let tempo = (album.duration/60).toFixed(2).toString().split(".");
+  let minuti = tempo[0];
+  let secondi = tempo[1];
+  
+
   visualizzaTitolo.innerHTML = `
     <div class="col-2">
 	   	<img src="${album.cover}" class="img-fluid mt-3">
@@ -73,7 +79,7 @@ function visualizzaTitolo(album) {
 	      <img src="${album.artist.picture}" class="rounded-circle me-2" alt="${album.artist.name}" id="picturArtist">
       </a>
 	      <p class="text-white m-0">
-          <span>${album.artist.name} • ${album.release_date} • ${album.nb_tracks} brani, ${album.duration} min </span>
+          <span>${album.artist.name} • ${album.release_date} • ${album.nb_tracks} brani, ${minuti} min  ${secondi} sec</span>
         </p>
 	    </div>
 	  </div>
@@ -90,9 +96,13 @@ function listaCanzoniAlbum(album) {
   
   let lista = 0;
   album.tracks.data.forEach(canzone => {
+    // Converto il tempo in minuti e secondi
+    let tempo = (canzone.duration/60).toFixed(2).toString().split(".");
+    let minuti = tempo[0];
+    let secondi = tempo[1];
     lista += 1;
     const content = document.createElement("tr");
-    console.table(canzone);
+    //console.table(canzone);
     content.innerHTML = `
       <tr>
         <th scope="row">${lista}</th>
@@ -101,7 +111,7 @@ function listaCanzoniAlbum(album) {
             <p>${canzone.album.title}</p>
           </td>
           <td>${canzone.rank}</td>
-          <td>${canzone.duration}</td>
+          <td>${minuti} min ${secondi} sec</td>
       </tr>
     `
     elencoCanzoni.appendChild(content);

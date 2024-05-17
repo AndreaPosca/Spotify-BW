@@ -12,7 +12,7 @@
 /* Impostazioni globali */
 body {
   font-size: 12px;
-  background-color: #272727; */
+  background-color: #272727;
 }
 
 .colore-primario {
@@ -23,11 +23,10 @@ body {
   background-color: #272727;
 }
 
-.color-content {
-  
-  /* background: rgb(126,113,63);
-  background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%); */
-}
+/* .color-content {
+  background: rgb(126,113,63);
+  background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
+} */
 /* end impostazioni globali */
 
 
@@ -342,4 +341,4 @@ body {
 
 
 
-  /* Qui finisce lo stile comune a tutte le pagine */
+ /* Qui finisce lo stile comune a tutte le pagine */

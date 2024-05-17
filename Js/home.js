@@ -14,6 +14,9 @@ const datiCard = [];    //array in cui passo gli elementi per fare la verifica
 const search = document.getElementById('search');
 const cardsContainer = document.getElementById('main-head');
 const genresContainer = document.getElementById('genres-container');
+const cerca = document.getElementById("cerca");
+const inputCerca = document.getElementById("inputCerca");
+const containerMain = document.getElementById('main-cards')
 
 //Creo funzione che al caricamento del dom punta gli h4 con la classe ".homeCards"
 //poi fa partire la funzione inserendo la card come parametro
@@ -98,15 +101,57 @@ const fetchHome = async(artist, divAlbum) => {
 /**
  * Funzione cerca con attivazione della casella input nel document html
 */
-const cerca = document.getElementById("cerca");
-const inputCerca = document.getElementById("inputCerca");
 
 cerca.addEventListener("click", function () {
-
     inputCerca.classList.toggle("d-none");
     cardsContainer.classList.add("d-none");
-   genresContainer.classList.remove('d-none')
-  
-  
+    genresContainer.classList.remove('d-none')
 });
 
+
+const pop = document.getElementById('pop');
+const rock = document.getElementById('rock');
+const rap = document.getElementById('rap');
+const elettronica = document.getElementById('elettronica');
+const metal = document.getElementById('metal');
+const reggaeton = document.getElementById('reggaeton');
+
+pop.addEventListener('click', function () {
+    display(pop);
+});
+
+rock.addEventListener('click', function () {
+    display(rock);
+});
+
+rap.addEventListener('click', function () {
+    display(rap);
+});
+
+elettronica.addEventListener('click', function() {
+    display(elettronica);
+});
+
+metal.addEventListener('click', function () {
+    display(metal);
+});
+
+reggaeton.addEventListener('click', function() {
+    display(reggaeton);
+});
+
+function display (name) {
+    console.log(name)
+    console.log(name.children[1])
+
+    const div = name.children[1].children;
+    console.log(div);
+    genresContainer.classList.add('d-none');
+    for (i=0; i<div.length ; i++) {
+        const artistName = div[i].children[0].innerText;
+        const cardContainer = document.createElement('div');
+        containerMain.appendChild(cardContainer);
+        cardContainer.classList.add('row', 'g-3');
+        fetchHome(artistName, cardContainer);
+    }    
+}

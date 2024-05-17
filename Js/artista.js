@@ -48,6 +48,13 @@ fetch(url + id, {
 
 function dettagliArtista(artista) {
   let infoArtista = document.getElementById("infoArtista");
+  const backgroundArtista = document.getElementById("background-artista");
+  backgroundArtista.style.backgroundImage = `url("${artista.picture_big}")`;
+  backgroundArtista.style.backgroundRepeat = "no-repeat";
+  backgroundArtista.style.backgroundPositionY = "-150px";
+  
+  backgroundArtista.style.backgroundSize = "100%";
+  backgroundArtista.style.zIndex = "11";
   // console.log(artista);
   infoArtista.innerHTML = `
     <div class="col-2">

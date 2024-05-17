@@ -116,7 +116,7 @@
 			<!-- End sidebar sinistra -->
 
 			<!-- Contenuto main playlist -->
-			<section class="container col-12 col-lg-8 sf-playlist">
+			<section class="container col-12 col-lg-8 sf-playlist" id="background-artista">
 
 				<div class="row d-flex justify-content-between align-items-center menu-nav">
 					<!-- Section freccie indietro e avanti -->
@@ -163,40 +163,39 @@
 
 				<div class="row">
 					<div class="col-12 color-content">
-						<!-- Section comandi principali hero play -->
-						<div class="d-flex align-items-center contenuto-lista">
-							<button class="btn rounded-circle me-5 sf-btn-primario" onclick="togglePlayPause()" id="play-primario">
-								<i class="bi bi-play-fill fs-4 text-black"></i>
-							</button>
-							<button class="btn following">FOLLOWING</button>
-							<div class="btn-group">
-								<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
-									<i class="bi bi-three-dots fs-4 text-white"></i>
-								</button>
-								<ul class="dropdown-menu sf-dropdown-menu">
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Aggiungi a La
-											tua libreria</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-journal-plus"></i> Aggiungi in
-											coda</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-exclamation-octagon"></i>
-											Segnala</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-download"></i> Scarica</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Escludi dal
-											profilo relativo ai gusti</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-folder"></i> Aggiungi
-											cartella</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-lg"></i> Aggiungi un'altra
-											playlist</a></li>
-									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-box-arrow-up"></i>
-											Condividi</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Section comandi principali hero play -->
 
-						
 						<!-- Elenco canzoni artista -->
 						<section class="elenco-canzoni-artista">
+							<!-- Section comandi principali hero play -->
+							<div class="d-flex align-items-center contenuto-lista">
+								<button class="btn rounded-circle me-5 sf-btn-primario" onclick="togglePlayPause()" id="play-primario">
+									<i class="bi bi-play-fill fs-4 text-black"></i>
+								</button>
+								<button class="btn following">FOLLOWING</button>
+								<div class="btn-group">
+									<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="bi bi-three-dots fs-4 text-white"></i>
+									</button>
+									<ul class="dropdown-menu sf-dropdown-menu">
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Aggiungi a La
+												tua libreria</a></li>
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-journal-plus"></i> Aggiungi in
+												coda</a></li>
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-exclamation-octagon"></i>
+												Segnala</a></li>
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-download"></i> Scarica</a></li>
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Escludi dal
+												profilo relativo ai gusti</a></li>
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-folder"></i> Aggiungi
+												cartella</a></li>
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-lg"></i> Aggiungi un'altra
+												playlist</a></li>
+										<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-box-arrow-up"></i>
+												Condividi</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- End Section comandi principali hero play -->
 							<table class="table table-responsive" id="table-hover">
 								<thead>
 									<tr>

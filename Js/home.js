@@ -61,7 +61,7 @@ const fetchHome = async(artist, divAlbum) => {
             musica.data.forEach((elemento) => {
                 //se la lunghezza dell'array che contiene le informazioni è minore 5
                 //allora aggiungi altro se verifica una seconda condizione
-                
+                const artistID = elemento.artist.id;
                 if(datiCard.length < quantitàCard) {
                     //Seconda condizione: se almeno un elemento dell'array ha lo stesso id dell'elemento
                     //che stiamo iterando si passa al prossimo elemento, altrimenti viene aggiunto all'array
@@ -70,7 +70,9 @@ const fetchHome = async(artist, divAlbum) => {
                     }
                 }                 
             })
+            //per ogni elemento (album)
             datiCard.forEach(album => {
+                //creo le parti della card
                 const col =document.createElement('div');
                 col.classList.add('col', 'card', 'display-card');
                 divAlbum.appendChild(col)
@@ -94,14 +96,17 @@ const fetchHome = async(artist, divAlbum) => {
                 body.appendChild(text)
                 text.innerText = album.title;
 
+
+                //al click sull'album trova l'id dell'album w lo manda come paramemtro alla funzione soecifica
                 col.addEventListener('click', function () {
-                    paginaSpecifica(album.id)
+                    paginaSpecificaAlbum(album.id)
                 })
             })
         })
 }
 
-function paginaSpecifica(id) {
+//inserisco nel link l'id dell'album
+function paginaSpecificaAlbum(id) {
     console.log(id)
     const albumString = JSON.stringify(id);
     const codedAlbum = encodeURIComponent(albumString)
@@ -179,4 +184,16 @@ function display (name) {
 
         fetchHome(artistName, cardContainer);
     }    
+
+
+    const titleCards = document.querySelectorAll('.titleCArdGeneri');
+    console.log(titleCards);
+
+//     titleCards.forEach(title => {
+//         const artistID = 
+//         title.addEventListener('click', function () {
+//             paginaSpecificaArtista(artistID);
+//         });
+//     });
+// 
 }

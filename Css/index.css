@@ -56,7 +56,6 @@ body {
   border-radius: 25px;
 }
 
-
 .freccia-sinistra,
 .freccia-destra {
   font-size: 1.8rem;
@@ -354,10 +353,10 @@ body {
   }
 
   
-  .main-head .row .body {
+  /* .main-head .row .body {
     background-color: #494949;
 
-  }
+  } */
 
   .main-head .row .col-4 div {
     display: flex;
@@ -408,9 +407,9 @@ body {
 
   #taylor .row .card, #metallica .row .card, #eminem .row .card {
     background-color: #333333;
-      display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   
   }
 
@@ -447,22 +446,22 @@ body {
     padding:0 ;
   }
 
-  .progress {
+  /* .progress {
     width: 50%;
     margin:0
   }
 
   .sf-progress {
     width: 75%;
-  }
+  } */
 
   section.col-2.d-flex span i {
    font-size: 20px;
   }
 
-  aside div.container div.row {
+  /* aside div.container div.row {
   margin-bottom: 40px;
-}
+} */
 
 small.card-text {
   font-size: 6px;
@@ -470,9 +469,9 @@ small.card-text {
 }
 
 
-aside div.container div.row {
+/* aside div.container div.row {
   margin-bottom: 40px;
-}
+} */
 
 .round img{
   border-radius: 3px 0 0 3px;

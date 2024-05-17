@@ -127,7 +127,6 @@ async function topElenco(elenco) {
 }
 
 
-
 /**
  * Visualizza la lista delle canzoni complete dell'album selezionato in forma tabellare
 */

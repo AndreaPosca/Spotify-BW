@@ -104,11 +104,16 @@ body {
   padding: 10px;
 }
 
-
 .contenuto-canzoni {
   height: 100%;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+#table-hover th,
+#table-hover td {
+  background-color: transparent;
+  color: #fff;
 }
 
 .link-title:hover {
@@ -133,7 +138,6 @@ body {
 .sf-btn-play {
   color: #fff;
 }
-
 
 .sf-list-group-item {
   background-color: #121212;
@@ -219,12 +223,6 @@ body {
   .sidebar-destra {
     display: block;
     
-  }
-
-  #table-hover th,
-  #table-hover td {
-    background-color: transparent;
-    color: #fff;
   }
   
   /* controlli riproduzione brano */

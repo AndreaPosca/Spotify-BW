@@ -102,6 +102,12 @@ body {
   padding: 10px;
 }
 
+#table-hover th,
+#table-hover td {
+  background-color: transparent;
+  color: #fff;
+}
+
 .contenuto-canzoni {
   height: 100%;
   padding: 10px;
@@ -153,10 +159,6 @@ body {
   width: 40px;
 }
 
-.footerRiproduzione {
-  display: none;
-}
-
 .link-artista {
   color: #fff;
   text-decoration: none;
@@ -165,6 +167,34 @@ body {
 .link-artista:hover {
   cursor: pointer;
   color: #00c358;
+}
+
+.footbar-mobile {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.icons-house,
+.icons-search,
+.icons-book {
+  font-size: 2.0rem;
+}
+
+.icons-house:hover,
+.icons-search:hover,
+.icons-book:hover {
+  color:#00c358;
+}
+
+
+.footbar-desktop,
+.footerRiproduzione,
+.sf-progress,
+.comandi-volume,
+.riproduzione {
+  display: none;
 }
 
 
@@ -225,12 +255,6 @@ body {
   .sidebar-destra {
     display: block;
     
-  }
-
-  #table-hover th,
-  #table-hover td {
-    background-color: transparent;
-    color: #fff;
   }
   
   /* controlli riproduzione brano */
@@ -319,12 +343,30 @@ body {
   }
 
   .footerRiproduzione {
-    height: 150px;
+    /* height: 150px; */
     display: block;
   }
 
   #imageRiproduzione {
     width: 100px;
+  }
+
+  .footbar-desktop {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+
+  .footerRiproduzione,
+  .sf-progress,
+  .comandi-volume,
+  .riproduzione {
+    display: block;
   }
 
 }

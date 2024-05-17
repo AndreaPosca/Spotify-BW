@@ -145,7 +145,9 @@ function viewCanzoni(canzoni) {
       <tr>
         <th scope="row">${lista}</th>
           <td class="d-flex justify-content-start align-items-center gap-4">
-          <img src="${canzone.album.cover_small}" class="img-fluid" alt="${canzone.album.title}">
+          <a href="./album.html?id=${canzone.album.id}">
+            <img src="${canzone.album.cover_small}" class="img-fluid" alt="${canzone.album.title}">
+          </a>
             <p class="link-title" id="${canzone.id}">${canzone.title}</p>
             <p>${canzone.title}</p>
           </td>

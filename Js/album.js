@@ -14,16 +14,22 @@
 */
 
 // Url endpoint di esempio di album
-const url = "https://striveschool-api.herokuapp.com/api/deezer/album/75621062";
+const url = "https://striveschool-api.herokuapp.com/api/deezer/album/";
 
 const nomeArtista = document.getElementById("nomeArtista");
 
 const brano = document.getElementById("brano");
 
+// Crea una nuova istanza di URLSearchParams con la query string dell'URL corrente.
+const params = new URLSearchParams(window.location.search);
+
+// Estrae il valore del parametro 'id' dalla query string dell'URL.
+const id = params.get("id");
+
 document.addEventListener("DOMContentLoaded", function() {
    
   // Fetch!
-  fetch(url, {
+  fetch(url + id, {
     headers: {
       "Content-Type": "application/json",
     }

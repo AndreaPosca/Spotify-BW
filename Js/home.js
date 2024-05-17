@@ -8,9 +8,12 @@
 // Artist
 // https://striveschool-api.herokuapp.com/api/deezer/artist/75621062
 
-//Dichiarazionii variabili utili 
-const quantitàCard = 5;
-const datiCard = [];
+//Dichiarazionii utili 
+const quantitàCard = 5; //quantità di card visibili nella home
+const datiCard = [];    //array in cui passo gli elementi per fare la verifica
+const search = document.getElementById('search');
+const cardsContainer = document.getElementById('main-card');
+const genresContainer = document.getElementById('genres-container');
 
 //Creo funzione che al caricamento del dom punta gli h4 con la classe ".homeCards"
 //poi fa partire la funzione inserendo la card come parametro
@@ -90,6 +93,8 @@ const fetchHome = async(artist, divAlbum) => {
             })
         })
 }
-//DA CANCELLARE:
-// let name = document.querySelectorAll('.homeCards');
-// name.forEach(element => console.log(element.parentNode.innerHTML))
+
+search.addEventListener('click', function () {
+    cardsContainer.classList.add('d-none');
+    genresContainer.classList.remove('d-none')
+})

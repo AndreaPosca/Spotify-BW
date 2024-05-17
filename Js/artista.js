@@ -212,5 +212,18 @@ function listaCanzoniAlbum(artista) {
 };
 
 
+const cerca = document.getElementById("cerca");
+const inputCerca = document.getElementById("inputCerca");
+
+cerca.addEventListener("click", () => {
+  if (inputCerca.classList.contains("d-none")) {
+    inputCerca.classList.remove("d-none");
+  } else {
+    inputCerca.classList.add("d-none");
+  }
+  
+});
+
+
 
 

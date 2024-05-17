@@ -175,6 +175,7 @@ function updateProgressBar() {
   progressBar.style.width = progress + "%";
 };
 
+
 const cerca = document.getElementById("cerca");
 const inputCerca = document.getElementById("inputCerca");
 
@@ -185,7 +186,7 @@ cerca.addEventListener("click", () => {
     inputCerca.classList.add("d-none");
   }
   
-})
+});
 
 
 

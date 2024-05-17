@@ -58,12 +58,7 @@ body {
   font-size: 1.8rem;
 }
 
-.freccia-sinistra {
-  margin-left: 15px; 
-}
-
 .freccia-sinistra:hover {
-  
   cursor: pointer;
   opacity: 0.5;
 }

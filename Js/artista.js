@@ -14,48 +14,77 @@
  * 
 */
 
+// Definisce la costante 'url' che contiene l'URL base per l'API di Strive School relativa agli artisti di Deezer.
 const url = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
 
+// Crea una nuova istanza di URLSearchParams con la query string dell'URL corrente.
 const params = new URLSearchParams(window.location.search);
 
+// Estrae il valore del parametro 'id' dalla query string dell'URL.
 const id = params.get("id");
 
 
-// Fetch!
+
+// Effettua una richiesta fetch all'URL composto dalla variabile 'url' e dall'ID dell'artista.
 fetch(url + id, {
+  // Imposta l'intestazione della richiesta per indicare che il contenuto è in formato JSON.
   headers: {
     "Content-Type": "application/json",
   }
 })
-  .then((response) => {
-   // Verifico la risposta del server
-   if (!response.ok) {
+// Gestisce la risposta della richiesta fetch.
+.then((response) => {
+  // Verifica se la risposta del server non è ok (stato non compreso tra 200-299).
+  if (!response.ok) {
+    // Se la risposta non è ok, lancia un errore con un messaggio.
     throw new Error("Risposta networks non andata a buon fine.");
   };
-  // Restituisce la risposta in formato json
+  // Restituisce la risposta convertita in formato JSON.
   return response.json();
-  })
-  // Convertiamo in json la response
-  .then((artistaDettagli) => {
-    
-    document.title = `Artista - ${artistaDettagli.name}`;
-    // Richiamo la funzione che andrà a visualizzare il libro selezionato con id nel mio document html
-    dettagliArtista(artistaDettagli);
-    topElenco(artistaDettagli.tracklist);
+})
+// Elabora i dati dell'artista ottenuti dalla risposta JSON.
+.then((artistaDettagli) => {
+  // Aggiorna il titolo della pagina con il nome dell'artista.
+  document.title = `Artista - ${artistaDettagli.name}`;
+  
+  // Richiama la funzione 'dettagliArtista' per visualizzare i dettagli dell'artista nel documento HTML.
+  dettagliArtista(artistaDettagli);
+  
+  // Richiama la funzione 'topElenco' per visualizzare la tracklist dell'artista.
+  topElenco(artistaDettagli.tracklist);
+})
+// Gestisce eventuali errori che si verificano durante il fetch o l'elaborazione della risposta.
+.catch((error) => {
+  // Logga l'errore nella console.
+  console.error("Si è verificato un errore:", error);
 });
 
 
 
+// Definisce la funzione 'dettagliArtista' che riceve un oggetto 'artista' come parametro.
 function dettagliArtista(artista) {
+  // Seleziona l'elemento HTML con l'ID 'infoArtista' e lo assegna alla variabile 'infoArtista'.
   let infoArtista = document.getElementById("infoArtista");
+  
+  // Seleziona l'elemento HTML con l'ID 'background-artista' e lo assegna alla costante 'backgroundArtista'.
   const backgroundArtista = document.getElementById("background-artista");
+  
+  // Imposta l'immagine di sfondo dell'elemento 'background-artista' utilizzando la proprietà 'picture_big' dell'oggetto 'artista'.
   backgroundArtista.style.backgroundImage = `url("${artista.picture_big}")`;
+  
+  // Impedisce la ripetizione dell'immagine di sfondo.
   backgroundArtista.style.backgroundRepeat = "no-repeat";
+  
+  // Imposta la posizione verticale dell'immagine di sfondo.
   backgroundArtista.style.backgroundPositionY = "-150px";
   
+  // Adatta l'immagine di sfondo per coprire l'intera larghezza del contenitore.
   backgroundArtista.style.backgroundSize = "100%";
+  
+  // Imposta il livello di sovrapposizione dell'elemento 'background-artista' in modo che si trovi sopra altri elementi con z-index inferiore.
   backgroundArtista.style.zIndex = "11";
-  // console.log(artista);
+  
+  // Aggiorna il contenuto HTML dell'elemento 'infoArtista' con i dettagli dell'artista.
   infoArtista.innerHTML = `
     <div class="col-2">
       <img src="${artista.picture}" class="img-fluid mt-3" alt="${artista.name}">
@@ -68,27 +97,35 @@ function dettagliArtista(artista) {
         <p class="text-white m-0">${artista.nb_fan} ascoltatori mensili</p>
       </div>
     </div>
-  `
-};
+  `;
+}
 
 
+/**
+ * Definisce una funzione asincrona chiamata 'topElenco' che prende un parametro 'elenco'
+*/
 async function topElenco(elenco) {
-  // console.log(elenco);
-
+  // Esegue una richiesta fetch all'URL fornito dal parametro 'elenco' e attende la risposta.
   const response = await fetch(elenco, {
+    // Imposta l'intestazione della richiesta per indicare che il contenuto è in formato JSON.
     headers: {
       "Content-Type": "application/json",
     }
   });
-  // Verifico la risposta del server
+
+  // Verifica se la risposta del server non è ok (stato non compreso tra 200-299).
   if (!response.ok) {
+    // Se la risposta non è ok, lancia un errore con un messaggio.
     throw new Error("Risposta networks non andata a buon fine.");
-  };
-  // Restituisce la risposta in formato json
+  }
+
+  // Restituisce la risposta convertita in formato JSON e attende il risultato.
   const canzoni = await response.json();
-  // Richiamo la funzione visualizza tutti i prodotti nel document html
+
+  // Richiama la funzione 'viewCanzoni' per visualizzare le canzoni ottenute nel documento HTML.
   viewCanzoni(canzoni);
-};
+}
+
 
 
 /**
@@ -192,7 +229,10 @@ function togglePlayPause() {
 };
 
 
-
+/**
+ * Funzione avanzamento della barra progress in funzione del tempo di esecuzione della canzone
+ * tradotta in html in funzione del suo width in %
+*/
 function updateProgressBar() {
   // Calcola la percentuale di avanzamento della canzone
   let progress = (audio.currentTime / audio.duration) * 100;
@@ -201,6 +241,9 @@ function updateProgressBar() {
 };
 
 
+/**
+ * Funzione cerca con attivazione della casella input nel document html
+*/
 const cerca = document.getElementById("cerca");
 const inputCerca = document.getElementById("inputCerca");
 

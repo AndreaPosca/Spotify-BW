@@ -45,6 +45,10 @@ body {
   border-radius: 25px;
 }
 
+.menu-nav {
+  height: 100px;
+  background-color: #a4944c;
+}
 
 .freccia-sinistra,
 .freccia-destra {
@@ -61,6 +65,15 @@ body {
   opacity: 0.5;
 }
 
+.color-content {
+  background: rgb(126,113,63);
+  background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
+}
+
+.content-hero {
+  height: 230px;
+  background-color: #a4944c;
+}
 
 /* .sf-dropdown:hover {
   color: #fff;

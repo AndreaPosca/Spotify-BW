@@ -149,13 +149,19 @@ function display (name) {
     genresContainer.classList.add('d-none');
     for (i=0; i<div.length ; i++) {
         const artistName = div[i].children[0].innerText;
+
         const cardNew = document.createElement('div');
-       
         const cardContainer = document.createElement('div');
+        const title = document.createElement('h4')
+        title.innerText = artistName;
+        title.classList.add('col-12')
         cardContainer.id = "nuovocontainer";
         cardContainer.classList.add('row', 'g-3');
+
         containerMain.appendChild(cardNew);
+        cardNew.appendChild(title);
         cardNew.appendChild(cardContainer);
+
         fetchHome(artistName, cardContainer);
     }    
 }

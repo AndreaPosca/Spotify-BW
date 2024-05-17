@@ -374,7 +374,7 @@ body {
     margin-bottom: 170px;
   }
 
-  #main-head h2, #main-head h4 {
+  #main-head h2, #main-head h4,  h4.col-12 {
     color: white;
   }
 
@@ -442,7 +442,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
   }
 
   .nascondi-annuncio {
@@ -528,3 +527,6 @@ small.card-text {
   background-color: #333333;
 }
 
+.container.col-12.col-lg-8.px-4.mx-2 {
+  margin-bottom: 140px;
+}

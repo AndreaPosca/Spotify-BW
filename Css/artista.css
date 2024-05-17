@@ -22,6 +22,14 @@ body {
 .colore-secondario {
   background-color: #272727;
 }
+
+.color-content {
+  background: rgb(126,113,63);
+  background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
+}
+
+
+
 /* end impostazioni globali */
 
 
@@ -136,6 +144,17 @@ body {
   color: #fff;  
 }
 
+.following {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.following:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 /* .sf-list-group-item:hover {
   background-color: #272727;
   color: #fff;  
@@ -144,6 +163,16 @@ body {
 
 /* View Desktop */
 @media (min-width: 1439px) {
+
+  .button-brani {
+    background: rgb(39,11,131);
+    background: linear-gradient(45deg, rgba(39,11,131,1) 0%, rgba(87,78,162,1) 6%, rgba(123,142,154,1) 100%);
+  }
+  
+  .button-episodi {
+    background: rgb(0,69,55);
+    background: linear-gradient(45deg, rgba(0,69,55,1) 0%, rgba(0,69,55,1) 6%, rgba(0,69,55,1) 100%);
+  }
 
   #logo-spotify {
     width: 100px;
@@ -156,16 +185,6 @@ body {
 
   .button-plus i {
     color: #000;
-  }
-
-  .button-brani {
-    background: rgb(39,11,131);
-    background: linear-gradient(45deg, rgba(39,11,131,1) 0%, rgba(87,78,162,1) 6%, rgba(123,142,154,1) 100%);
-  }
-
-  .button-episodi {
-    background: rgb(0,69,55);
-    background: linear-gradient(45deg, rgba(0,69,55,1) 0%, rgba(0,69,55,1) 6%, rgba(0,69,55,1) 100%);
   }
 
   .button-episodi i {
@@ -199,11 +218,6 @@ body {
   .sidebar-destra {
     display: block;
     
-  }
-
-  .color-content {
-    background: rgb(126,113,63);
-    background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
   }
 
   #table-hover th,

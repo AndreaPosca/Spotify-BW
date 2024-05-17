@@ -126,6 +126,16 @@ body {
   font-size: 10px;
 }
 
+#heart-favoriti:hover {
+  cursor: pointer;
+}
+
+#picturArtist:hover {
+  cursor: pointer;
+}
+
+
+
 /* .sf-btn-primario:hover {
   border: 1px solid #fff;
   color: #fff;

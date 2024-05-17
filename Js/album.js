@@ -13,7 +13,7 @@
  * Javascript album.js
 */
 
-// Url di esempio di album
+// Url endpoint di esempio di album
 const url = "https://striveschool-api.herokuapp.com/api/deezer/album/75621062";
 
 const nomeArtista = document.getElementById("nomeArtista");
@@ -63,9 +63,11 @@ function visualizzaTitolo(album) {
 	    <span class="text-white">ALBUM</span>
 	    <h1 class="title">${album.title}</h1>
 	    <div class="d-flex justify-content-start align-items-center mt-3">
+      <a class="link-artista" href="./artista.html?id=${album.artist.id}">
 	      <img src="${album.artist.picture}" class="rounded-circle me-2" alt="${album.artist.name}" id="picturArtist">
+      </a>
 	      <p class="text-white m-0">
-          <a class="link-artista" href="./artista.html?id=${album.artist.id}">${album.artist.name}</a> • ${album.release_date} • ${album.nb_tracks} brani, ${album.duration} min 
+          <span>${album.artist.name} • ${album.release_date} • ${album.nb_tracks} brani, ${album.duration} min </span>
         </p>
 	    </div>
 	  </div>

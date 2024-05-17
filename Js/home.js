@@ -102,7 +102,7 @@ const fetchHome = async(artist, divAlbum) => {
 }
 
 function paginaSpecifica(id) {
-    window.location.href = './almbum.html?id=' + id;
+    window.location.href = './album.html?id=' + id;
 }
 
 /**

@@ -12,7 +12,7 @@
 const quantitàCard = 5; //quantità di card visibili nella home
 const datiCard = [];    //array in cui passo gli elementi per fare la verifica
 const search = document.getElementById('search');
-const cardsContainer = document.getElementById('main-card');
+const cardsContainer = document.getElementById('main-head');
 const genresContainer = document.getElementById('genres-container');
 
 //Creo funzione che al caricamento del dom punta gli h4 con la classe ".homeCards"
@@ -93,9 +93,6 @@ const fetchHome = async(artist, divAlbum) => {
             })
         })
 }
-//DA CANCELLARE:
-// let name = document.querySelectorAll('.homeCards');
-// name.forEach(element => console.log(element.parentNode.innerHTML))
 
 
 /**
@@ -104,12 +101,12 @@ const fetchHome = async(artist, divAlbum) => {
 const cerca = document.getElementById("cerca");
 const inputCerca = document.getElementById("inputCerca");
 
-cerca.addEventListener("click", () => {
-  if (inputCerca.classList.contains("d-none")) {
-    inputCerca.classList.remove("d-none");
-  } else {
-    inputCerca.classList.add("d-none");
-  }
+cerca.addEventListener("click", function () {
+
+    inputCerca.classList.toggle("d-none");
+    cardsContainer.classList.add("d-none");
+   genresContainer.classList.remove('d-none')
+  
   
 });
 

@@ -12,7 +12,7 @@
 /* Impostazioni globali */
 body {
   font-size: 12px;
-  background-color: #272727;
+  background-color: #272727; */
 }
 
 .colore-primario {
@@ -21,6 +21,12 @@ body {
 
 .colore-secondario {
   background-color: #272727;
+}
+
+.color-content {
+  
+  /* background: rgb(126,113,63);
+  background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%); */
 }
 /* end impostazioni globali */
 
@@ -50,7 +56,7 @@ body {
 
 .menu-nav {
   height: 100px;
-  background-color: #a4944c;
+  /* background-color: #272727; */
 }
 
 .freccia-sinistra,
@@ -58,12 +64,7 @@ body {
   font-size: 1.8rem;
 }
 
-.freccia-sinistra {
-  margin-left: 15px; 
-}
-
 .freccia-sinistra:hover {
-  
   cursor: pointer;
   opacity: 0.5;
 }
@@ -75,7 +76,6 @@ body {
 
 .content-hero {
   height: 230px;
-  background-color: #a4944c;
 }
 
 /* .sf-dropdown:hover {
@@ -105,6 +105,21 @@ body {
   padding: 10px;
 }
 
+
+.contenuto-canzoni {
+  height: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.link-title:hover {
+  cursor: pointer;
+}
+
+#titoloRiproduzione {
+  font-size: 0.8rem;
+}
+
 .sf-btn-primario {
   background-color: #00c358;
   border-radius: 20px;
@@ -126,14 +141,40 @@ body {
   color: #fff;  
 }
 
+.following {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.following:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 /* .sf-list-group-item:hover {
   background-color: #272727;
   color: #fff;  
 } */
 
+.elenco-canzoni-artista {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(105,99,99,1) 49%, rgba(0,0,0,1) 100%);: 
+}
+
 
 /* View Desktop */
 @media (min-width: 1439px) {
+
+  .button-brani {
+    background: rgb(39,11,131);
+    background: linear-gradient(45deg, rgba(39,11,131,1) 0%, rgba(87,78,162,1) 6%, rgba(123,142,154,1) 100%);
+  }
+  
+  .button-episodi {
+    background: rgb(0,69,55);
+    background: linear-gradient(45deg, rgba(0,69,55,1) 0%, rgba(0,69,55,1) 6%, rgba(0,69,55,1) 100%);
+  }
 
   #logo-spotify {
     width: 100px;
@@ -146,16 +187,6 @@ body {
 
   .button-plus i {
     color: #000;
-  }
-
-  .button-brani {
-    background: rgb(39,11,131);
-    background: linear-gradient(45deg, rgba(39,11,131,1) 0%, rgba(87,78,162,1) 6%, rgba(123,142,154,1) 100%);
-  }
-
-  .button-episodi {
-    background: rgb(0,69,55);
-    background: linear-gradient(45deg, rgba(0,69,55,1) 0%, rgba(0,69,55,1) 6%, rgba(0,69,55,1) 100%);
   }
 
   .button-episodi i {
@@ -191,11 +222,6 @@ body {
     
   }
 
-  .color-content {
-    background: rgb(126,113,63);
-    background: linear-gradient(180deg, rgba(126,113,63,1) 5%, rgba(42,38,21,1) 13%, rgba(22,21,18,1) 100%);
-  }
-
   #table-hover th,
   #table-hover td {
     background-color: transparent;
@@ -226,6 +252,31 @@ body {
     color: #454545;
   } */
 
+  .sf-btn-control-play {
+    background-color: #fff;
+  }
+
+  .sf-btn-control-play:hover {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  /* end controlli riproduzione brano */
+
+  .sf-link {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .sf-link:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px #00c358 solid; 
+  }
+
+  
   .sf-btn-control-play {
     background-color: #fff;
   }

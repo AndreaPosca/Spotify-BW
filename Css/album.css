@@ -126,6 +126,16 @@ body {
   font-size: 10px;
 }
 
+#heart-favoriti:hover {
+  cursor: pointer;
+}
+
+#picturArtist:hover {
+  cursor: pointer;
+}
+
+
+
 /* .sf-btn-primario:hover {
   border: 1px solid #fff;
   color: #fff;
@@ -151,6 +161,16 @@ body {
 
 .footerRiproduzione {
   display: none;
+}
+
+.link-artista {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-artista:hover {
+  cursor: pointer;
+  color: #00c358;
 }
 
 
@@ -314,5 +334,3 @@ body {
   }
 
 }
-
-

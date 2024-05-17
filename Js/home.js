@@ -102,7 +102,10 @@ const fetchHome = async(artist, divAlbum) => {
 }
 
 function paginaSpecifica(id) {
-    window.location.href = './almbum.html?id=' + id;
+    console.log(id)
+    const albumString = JSON.stringify(id);
+    const codedAlbum = encodeURIComponent(albumString)
+    window.location.href = './album.html?id=' + codedAlbum;
 }
 
 /**
@@ -163,11 +166,12 @@ function display (name) {
 
         const cardNew = document.createElement('div');
         const cardContainer = document.createElement('div');
+        cardContainer.id = "nuovocontainer";
+        cardContainer.classList.add('row', 'g-3');
+
         const title = document.createElement('h4')
         title.innerText = artistName;
         title.classList.add('col-12', 'titleCArdGeneri')
-        cardContainer.id = "nuovocontainer";
-        cardContainer.classList.add('row', 'g-3');
 
         containerMain.appendChild(cardNew);
         cardNew.appendChild(title);

@@ -78,7 +78,7 @@ const fetchHome = async(artist, divAlbum) => {
                 body.classList.add('card-body');
                 col.appendChild(body);
 
-                const title = document.createElement('h4');
+                const title = document.createElement('h6');
                 title.classList.add('card-title');
                 body.appendChild(title);
                 title.innerText = album.title

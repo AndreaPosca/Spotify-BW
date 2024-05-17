@@ -105,132 +105,136 @@
 			<!-- End sidebar sinistra -->
 
 		<!-- Contenuto main playlist -->
-		<section class="container col-12 col-lg-8 sf-playlist">
-			<div class="row d-flex justify-content-center align-items-center menu-nav">
+		<section class="container col-12 col-lg-8 px-4 mx-2">
+			<div class="mx-4">
+				<div class="row d-flex justify-content-center align-items-center menu-nav">
 
-				<!-- Section freccie indietro e avanti -->
-				<div class="col-2 p-0">
-					<a class="btn fs-3"><i class="bi bi-arrow-left-circle-fill freccia-sinistra"></i></a>
-					<a class="btn fs-3"><i class="bi bi-arrow-right-circle-fill freccia-destra"></i></a>
-				</div>
-				<!-- End Section freccia indietro e avanti -->
-
-				<!-- Section menu user -->
-				<div class="col-10 justify-content-end mt-3">
-					<div class="dropdown float-end sf-dropdown">
-						<button class="btn dropdown-toggle text-white p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-							<img src="https://picsum.photos/30" class="img-fluid rounded-circle"> Lidia Nautilus ...
-						</button>
-						<ul class="dropdown-menu sf-dropdown-menu">
-							<li><a class="dropdown-item sf-dropdown-item" href="#">Account</a></li>
-							<li><a class="dropdown-item sf-dropdown-item" href="#">Profilo</a></li>
-							<li><a class="dropdown-item sf-dropdown-item" href="#">Effettua l'upgrade a Premium</a></li>
-							<li><a class="dropdown-item sf-dropdown-item" href="#">Sessione privata</a></li>
-							<li><a class="dropdown-item sf-dropdown-item" href="#">Impostazioni</a></li>
-							<li><a class="dropdown-item sf-dropdown-item" href="#">Esci</a></li>
-						</ul>
+					<!-- Section freccie indietro e avanti -->
+					<div class="col-2 p-0">
+						<a><i class="bi bi-chevron-left freccia-sinistra rounded-pill"></i></a>
+						<a class="ms-3"><i class="bi bi-chevron-right freccia-destra rounded-pill"></i></a>
 					</div>
-				</div>
-				<!-- End Section menu user -->
-			</div>
+					<!-- End Section freccia indietro e avanti -->
 
-			<!-- Section Hero -->
-			<div class="row content-hero">
-				<div class="col-2">
-					<img src="https://picsum.photos/400/" class="img-fluid mt-3">
+					<!-- Section menu user -->
+					<div class="col-10 justify-content-end mt-3">
+						<div class="dropdown float-end sf-dropdown">
+							<button class="btn dropdown-toggle text-white p-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="https://picsum.photos/30" class="img-fluid rounded-circle"> Lidia Nautilus ...
+							</button>
+							<ul class="dropdown-menu sf-dropdown-menu">
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Account</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Profilo</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Effettua l'upgrade a Premium</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Sessione privata</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Impostazioni</a></li>
+								<li><a class="dropdown-item sf-dropdown-item" href="#">Esci</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End Section menu user -->
 				</div>
-				<div class="col-10 mt-5">
-					<span class="text-white">ALBUM</span>
-					<h1 class="title">VIOLA (feat. Salmo)</h1>
-					<div class="d-flex justify-content-start align-items-center mt-3">
-						<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image album">
-						<p class="text-white m-0">Fedez, Salmo</p>
-						<p class="text-white m-0">Ascolta il nuovo singolo di Fedez e Salmo!</p>
+
+				<!-- Section Hero -->
+				<div class="row content-hero" id="jumbotron">
+					<div class="col-3 py-4">
+						<img src="https://picsum.photos/300/" class="img-fluid m-1">
+					</div>
+					<div class="col-9 d-flex flex-column justify-content-center">
+						<div class="d-flex justify-content-between py-1">
+							<span class="text-white">ALBUM</span>
+							<p class="nascondi-annuncio rounded-pill mt-2 px-2" id="nascondi-annuncio">NASCONDI ANNUNCI</p>
+						</div>
+						
+						<h1 class="title">VIOLA (feat. Salmo)</h1>
+						<div class="d-flex flex-column justify-center-center align-items-start gap-3">
+							<p class="text-white m-0 fw-medium">Fedez, Salmo</p>
+							<p class="text-white m-0 fw-medium">Ascolta il nuovo singolo di Fedez e Salmo!</p>
+						</div>
+						<!-- Section comandi principali hero play -->
+						<div class="d-flex align-items-center contenuto-lista">
+							<button class="btn me-3 px-4 py-2 sf-btn-primario rounded-pill">
+								Play
+							</button>
+							<span class="me-3 btn-salva rounded-pill px-4 py-2">Salva</span>
+							<div class="btn-group">
+								<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="bi bi-three-dots"></i>
+								</button>
+								<ul class="dropdown-menu sf-dropdown-menu">
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Aggiungi a La tua libreria</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-journal-plus"></i> Aggiungi in coda</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-exclamation-octagon"></i>Segnala</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-download"></i> Scarica</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Escludi dal profilo relativo ai gusti</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-folder"></i> Aggiungi cartella</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-lg"></i> Aggiungi un'altra playlist</a></li>
+									<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-box-arrow-up"></i>Condividi</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Section comandi principali hero play -->
 					</div>
 				</div>
 			</div>
 			<!-- Section Hero -->
 
 			<div class="row">
-				<div class="col-12 color-content">
-					<!-- Section comandi principali hero play -->
-					<div class="d-flex align-items-center contenuto-lista">
-						<button class="btn rounded-circle me-5 sf-btn-primario">
-							<i class="bi bi-play-fill fs-4 text-white"></i>
-						</button>
-						<span class="me-5"><i class="bi bi-heart fs-4 text-white"></i></span>
-						<div class="btn-group">
-							<button class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
-								<i class="bi bi-three-dots fs-4 text-white"></i>
-							</button>
-							<ul class="dropdown-menu sf-dropdown-menu">
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Aggiungi a La tua libreria</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-journal-plus"></i> Aggiungi in coda</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-exclamation-octagon"></i>Segnala</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-download"></i> Scarica</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-circle"></i> Escludi dal profilo relativo ai gusti</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-folder"></i> Aggiungi cartella</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-plus-lg"></i> Aggiungi un'altra playlist</a></li>
-								<li><a class="dropdown-item sf-dropdown-item" href="#"><i class="bi bi-box-arrow-up"></i>Condividi</a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- End Section comandi principali hero play -->
-
+				<div class="col-12">
 					<div>
 							
 						<!-- START MAIN -->
 						<div class="container main-head">
-							<h2>Buonasera</h2>
+							<h2 class="my-4">Buonasera</h2>
 
 							<!-- START
 							HEAD SECTION (RETTANGOLI) -->
 							<div class="row">
-								<div class="col-6">
-									<div>
-										<img src="https://picsum.photos/50" alt="">
+								<div class="col-4">
+									<div class="round">
+										<img src="https://picsum.photos/60" alt="">
 										<div class="body">
-											<h3>roba</h3>
+											<h6>early stage emily syndrome (sett-ott 2022)</h6>
 										</div>
 									</div>
 								</div>
-								<div class="col-6">
-									<div>
-										<img src="https://picsum.photos/50" alt="">
+								<div class="col-4">
+									<div class="round">
+										<img src="https://picsum.photos/60" alt="">
 										<div class="body">
-											<h3>roba</h3>
+											<h6>Be The Young</h6>
 										</div>
 									</div>
 								</div>
-								<div class="col-6">
-									<div>
-										<img src="https://picsum.photos/50" alt="">
+								<div class="col-4">
+									<div class="round">
+										<img src="https://picsum.photos/60" alt="">
 										<div class="body">
-											<h3>roba</h3>
+											<h6>saggio vibes</h6>
 										</div>
 									</div>
 								</div>
-								<div class="col-6">
-									<div>
-										<img src="https://picsum.photos/50" alt="">
+								<div class="col-4">
+									<div class="round">
+										<img src="https://picsum.photos/60" alt="">
 										<div class="body">
-											<h3>roba</h3>
+											<h6>Brani che ti piacciono</h6>
 										</div>
 									</div>
 								</div>
-								<div class="col-6">
-									<div>
-										<img src="https://picsum.photos/50" alt="">
+								<div class="col-4">
+									<div class="round">
+										<img src="https://picsum.photos/60" alt="">
 										<div class="body">
-											<h3>roba</h3>
+											<h6>2021 lol</h6>
 										</div>
 									</div>
 								</div>
-								<div class="col-6">
-									<div>
-										<img src="https://picsum.photos/50" alt="">
+								<div class="col-4">
+									<div class="round">
+										<img src="https://picsum.photos/60" alt="">
 										<div class="body">
-											<h3>roba</h3>
+											<h6>Deep Dive with Ali Abdaal</h6>
 										</div>
 									</div>
 								</div>
@@ -240,20 +244,20 @@
 
 							<!-- START
 							BODY SECTION (QUADRATI) -->
-							<h2>I più ascoltati</h2>
-							<div class="row" id="taylor">
+							<h4 class="my-4">Altro di ciò che ti piace</h4>
+							<div class="row d-flex justify-content-center" id="taylor">
 								<h4 class="col-12 homeCards d-none">Taylor Swift</h4>
 								
 								
 							</div>
 
-							<div class="row" id="metallica">
+							<div class="row d-flex justify-content-center gap-2" id="metallica">
 								<h4 class="col-12 homeCards d-none">Metallica</h4>
 								
 								
 							</div>
 
-							<div class="row" id="eminem">
+							<div class="row d-flex justify-content-center gap-2" id="eminem">
 								<h4 class="col-12 homeCards d-none">Eminem</h4>
 								
 								
@@ -439,55 +443,59 @@
 		<!-- End main playlist -->
 
 		<!-- Sidebar destra Attività amici-->
-		<aside class="col-lg-2 colore-primario sidebar-destra">
+		<aside class="ps-2 colore-primario">
 			<div class="d-flex justify-content-between align-content-center mt-4">
-				<h5 class="title fs-5 mt-1">Attività amici</h5>
+				<h5 class="title fs-6 mt-1">Attività amici</h5>
 				<div>
-					<i class="bi bi-person-add text-white me-2 fs-5"></i>
-					<i class="bi bi-x-lg text-white me-2 fs-5"></i>
+					<i class="bi bi-person-add text-white me-2 fs-6"></i>
+					<i class="bi bi-x-lg text-white me-2 fs-6"></i>
 				</div>
 			</div>
 
 			<!-- Section Card user amici -->
-			<div class="card-img d-flex mt-5 mb-5">
-				<div class="me-1">
-					<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
-				</div>
-				<div>
-					<h5 class="card-title text-white fs-6 me-4">Charlie Hookham</h5>
-					<p class="card-text"><small class="text-white">In Camera • Yumi Zouma</small></p>
-					<p class="card-text"><small class="text-white"><i class="bi bi-record-circle"></i> EP III</small></p>
-				</div>
-				<div class="me-5">
-					<h5 class="text-white fs-6">4 ore</h5>
-				</div>
-			</div>
+			<div class="mt-5 mb-5 container p-0">
 
-			<div class="card-img d-flex mb-5">
-				<div class="me-1">
-					<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+				<div class="row d-flex justify-content-between pe-1 ">
+					<div class="col-2">
+						<img src="https://picsum.photos/30" class="rounded-circle img-card" alt="Image user">
+					</div>
+					<div class="d-flex flex-column col-7 ps-3">
+						<h6 class="card-title text-white">Charlie Hookham</h6>
+						<small class="text-white card-text">In Camera • Yumi Zouma</small>
+						<small class="text-white card-text"><i class="bi bi-record-circle"></i> EP III</small>
+					</div>
+					<div class="col-3 d-flex justify-content-end">
+						<p class="text-white time">4 ore</p>
+					</div>
 				</div>
-				<div>
-					<h5 class="card-title text-white fs-6 me-4">lightdark02</h5>
-					<p class="card-text text-white">Aimed to Kill • Jade LeMac</p>
-					<p class="card-text text-white"><i class="bi bi-record-circle"></i> Aimed to Kill</p>
-				</div>
-				<div>
-					<h5 class="text-white fs-6">4 ore</h5>
-				</div>
-			</div>
+			
 
-			<div class="card-img d-flex mb-5">
-				<div class="me-1">
-					<img src="https://picsum.photos/40" class="rounded-circle me-2" alt="Image user">
+				<div class="row d-flex justify-content-between pe-1">
+					<div class="col-2">
+						<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image user">
+					</div>
+					<div class="d-flex flex-column col-7 ps-3">
+						<h6 class="card-title text-white">lightdark02</h6>
+						<small class="card-text text-white">Aimed to Kill • Jade LeMac</small>
+						<small class="card-text text-white"><i class="bi bi-record-circle"></i> Aimed to Kill</small>
+					</div>
+					<div class="col-3 d-flex justify-content-end">
+						<p class="text-white time">8 ore</p>
+					</div>
 				</div>
-				<div>
-					<h5 class="card-title text-white fs-6 me-4">Valeria Traverso</h5>
-					<p class="card-text text-white">New Kings • Sleeping Wolf</p>
-					<p class="card-text text-white"><i class="bi bi-music-note-beamed"></i> Twint Badass mood</p>
-				</div>
-				<div>
-					<h5 class="text-white fs-6">4 ore</h5>
+
+				<div class="row d-flex justify-content-between pe-1">
+					<div class="col-2">
+						<img src="https://picsum.photos/30" class="rounded-circle me-2" alt="Image user">
+					</div>
+					<div class="d-flex flex-column col-7 ps-3">
+						<h6 class="card-title text-white">Valeria Traverso</h6>
+						<small class="card-text text-white">New Kings • Sleeping Wolf</small>
+						<small class="card-text text-white"><i class="bi bi-music-note-beamed"></i> Twint Badass mood</small>
+					</div>
+					<div class="col-3 d-flex justify-content-end">
+						<p class="text-white time">3 giorni</p>
+					</div>
 				</div>
 			</div>
 		</aside>
@@ -496,11 +504,11 @@
 		<!-- End Sidebar destra attività amici-->
 
 
-		<section class="row colore-secondario fixed-bottom">
+		<section class="row colore-secondario fixed-bottom m-0">
 			<!-- Album selezionato per la riproduzione -->
-			<div class="col-lg-2 d-flex justify-content-between align-items-center p-4">
+			<div class="col-lg-2 d-flex justify-content-between align-items-center">
 
-				<div class="card border-0 bg-transparent">
+				<div class="card border-0 bg-transparent m-0">
 					<div class="row justify-content-lg-between align-items-center g-0">
 						<div class="col-lg-3">
 							<img src="https://picsum.photos/60/60" class="img-fluid" alt="...">
@@ -520,48 +528,50 @@
 			<!-- End albun selezionato per la riproduzione -->
 
 			<!-- Barra di riproduzione -->
-			<section class="col-lg-8">
+			<section class="col-lg-8 m-0">
 				<!-- Button di riproduzione -->
 				<div class="riproduzione">
-					<button class="btn sf-btn-control">
-						<i class="bi bi-shuffle"></i>
-					</button>
-					<button class="btn sf-btn-control">
-						<i class="bi bi-skip-start-fill"></i>
-					</button>
-					<button class="btn rounded-circle sf-btn-control-play">
-						<i class="bi bi-play"></i>
-					</button>
-					<button class="btn sf-btn-control">
-						<i class="bi bi-skip-end-fill"></i>
-					</button>
-					<button class="btn sf-btn-control">
-						<i class="bi bi-repeat"></i>
-						<span class="fa fa-retweet"></span>
-					</button>
+					<div>
+						<button class="btn sf-btn-control">
+							<i class="bi bi-shuffle"></i>
+						</button>
+						<button class="btn sf-btn-control">
+							<i class="bi bi-skip-start-fill"></i>
+						</button>
+						<button class="btn rounded-circle sf-btn-control-play">
+							<i class="bi bi-play"></i>
+						</button>
+						<button class="btn sf-btn-control">
+							<i class="bi bi-skip-end-fill"></i>
+						</button>
+						<button class="btn sf-btn-control">
+							<i class="bi bi-repeat"></i>
+							<span class="fa fa-retweet"></span>
+						</button>
+					</div>
 					<!-- End button di riproduzione -->
 
 					<!-- Barra progress musica -->
-					<div class="progress sf-progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-					</div>
+					<div class="progress sf-progress" role="progressbar" aria-label="Example 3px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 3px">
+						<div class="progress-bar" style="width: 25%"></div>
+					  </div>
 					<!-- End barra progress musica -->
 				</div>
 			</section>
-			<section class="col-lg-2 mt-5">
-				<span class="button-mic"><i class="bi bi-mic text-white fs-5 me-2"></i></span>
-				<span class="button-list"><i class="bi bi-view-list text-white fs-5 me-2"></i></span>
-				<span class="burron-speaker"><i class="bi bi-speaker text-white fs-5 me-2"></i></span>
-				<span class="buttton-volume"><i class="bi bi-volume-up text-white fs-5 me-2"></i></span>
-				<span class="button-arrows"><i class="bi bi-arrows-angle-expand text-white fs-5 me-2"></i></span>
+			<section class="col-lg-2 d-flex align-items-center gap-2">
+				<span class="button-mic"><i class="bi bi-mic text-white me-2"></i></span>
+				<span class="button-list"><i class="bi bi-view-list text-white me-2"></i></span>
+				<span class="burron-speaker"><i class="bi bi-speaker text-white me-2"></i></span>
+				<span class="buttton-volume"><i class="bi bi-volume-up text-white me-2"></i></span>
 				<div class="progress sf-progress-2" role="progressbar" aria-label="Basic example" aria-valuenow="0"
 					aria-valuemin="0" aria-valuemax="100">
 					<div class="progress-bar" style="width: 25%"></div>
 				</div>
+				<span class="button-arrows"><i class="bi bi-arrows-angle-expand text-white me-2"></i></span>
 
 				<!-- End barra di riproduzione -->
 
-				<!-- Comandi di riproduzione -->
+				<!-- Comandi di riproduzione
 				<div class="col-2">
 					<button class="btn sf-btn-control">
 						<span class="fa fa-list"></span>
@@ -572,7 +582,7 @@
 					<button class="btn sf-btn-control">
 						<span class="fa fa-volume-up"></span>
 					</button>
-				</div>
+				</div> -->
 				<!-- End comandi di riproduzione -->
 			</section>
 		</section>

@@ -45,8 +45,6 @@ body {
 /* Contenuto main */
 .sf-playlist {
   background-color: #121212;
-  height: 100%; 
-  overflow-y: scroll;
 }
 
 /* Menù utente */
@@ -58,16 +56,16 @@ body {
 
 .menu-nav {
   height: 100px;
-  background-color: #a4944c;
 }
 
 .freccia-sinistra,
 .freccia-destra {
   font-size: 1.8rem;
-}
+  color: white;
+  background-color: #000;
+  font-size: 20px;
+  padding: 1px 3px 1px 4px;
 
-.freccia-sinistra {
-  margin-left: 15px; 
 }
 
 .freccia-sinistra:hover {
@@ -82,8 +80,8 @@ body {
 }
 
 .content-hero {
-  height: 230px;
-  background-color: #a4944c;
+  background: linear-gradient(15deg, rgba(0,0,0,1) 35%, rgba(47,47,47,1) 100%);
+  ;
 }
 
 /* .sf-dropdown:hover {
@@ -109,14 +107,13 @@ body {
 
 .contenuto-lista {
   height: 100px;
-  margin-top: 50px;
   padding: 10px;
 }
 
 .sf-btn-primario {
   background-color: #00c358;
-  border-radius: 20px;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 /* .sf-btn-primario:hover {
@@ -220,6 +217,7 @@ body {
 
   .sf-progress-2 {
     height: 0.2rem;
+    width: 100%;
     margin-top: -15px;
     margin-left: 140px;
     margin-right: 80px;
@@ -260,6 +258,8 @@ body {
 
   .title {
     color: #fff;
+    font-size: 50px;
+    font-weight: 700;
   }
 
   label {
@@ -283,17 +283,17 @@ body {
   }
 
   .riproduzione {
-    text-align: center; 
-    margin-top: 50px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 
-  .riproduzione-volume {
-    width: 100%;
-  }
+  .riproduzione .progress {
+    margin:0;
+}
 
-  .button-arrows {
-    margin-left: 110px;
-  }
+  
 
 }
 
@@ -314,7 +314,7 @@ body {
     margin-bottom: 170px;
   }
 
-  .main-head h2 {
+  .main-head h2, .main-head h4 {
     color: white;
   }
 
@@ -324,22 +324,25 @@ body {
 
   
   .main-head .row .body {
-    background-color: grey;
+    background-color: #494949;
 
   }
 
-  .main-head .row .col-6 div {
+  .main-head .row .col-4 div {
     display: flex;
     width: 100%;
   }
 
-  .body h3 {
-    margin-left: 10px;
+  .body h6 {
+    font-size: 12px;
+    margin:0 60px 0 5px;
     color: white;
   }
 
   #taylor .row img, #metallica .row img, #eminem .row img{
-    width:150px;
+    width:140px;
+    margin-top: 5px;
+    border-radius: 5px;
   }
 
   .main-head {
@@ -350,12 +353,112 @@ body {
     margin-bottom: 20px;
   }
 
-  #taylor h4, #metallica h4, #eminem h4 {
+  #taylor h6, #taylor p, #metallica h6, #metallica p, #eminem h6, #eminem p {
     overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #taylor p, #metallica p, #eminem p {
+    font-size: 10px;
+    color: rgb(155, 151, 151);
+    font-weight: 600;
+  }
+
+  #taylor h6, #metallica h6, #eminem h6 {
+    font-size: 13px;
+    font-weight: 800;
+    margin: 5px 0;
   }
 
   #taylor .row, #metallica .row, #eminem .row {
-    gap: 10px;
+    gap: 15px;
   }
+
+  #taylor .row .card, #metallica .row .card, #eminem .row .card {
+    background-color: #333333;
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  }
+
+  #taylor .row .card h6, #metallica .row .card h6, #eminem .row .card h6 {
+    color:white;
+  }
+
+  .nascondi-annuncio {
+    background-color: #313131;
+    font-size: 10px;
+    font-weight: 700;
+    color: #8e8d8d;
+  }
+
+  .btn-salva {
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+  }
+
+  .btn-group button i {
+    font-size: 15px;
+    color: rgb(143 143 143);
+  }
+
+  h6.card-title {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .time {
+    font-size: 8px;
+    font-weight: 700;
+    padding:0 ;
+  }
+
+  .progress {
+    width: 50%;
+    margin:0
+  }
+
+  .sf-progress {
+    width: 75%;
+  }
+
+  section.col-2.d-flex span i {
+   font-size: 20px;
+  }
+
+  aside div.container div.row {
+  margin-bottom: 40px;
+}
+
+small.card-text {
+  font-size: 6px;
+  font-weight: 600;
+}
+
+
+aside div.container div.row {
+  margin-bottom: 40px;
+}
+
+.round img{
+  border-radius: 3px 0 0 3px;
+}
+
+.round .body {
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  align-items: center;
+  padding-left:10px;
+}
+
+.body h6 {
+  color: white;
+}
+
+.homeCards .row .col {
+  background-color: #373737;
+
+}
